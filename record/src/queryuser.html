@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>用户查询</title>
+        <style>
+            #header {
+                background-color:black;
+                color:white;
+                text-align:center;
+                padding:10px;
+            }
+            #nav {
+                line-height:30px;
+                background-color: #eeeeee;
+                text-align:center;
+                height:480px;
+                width:115px;
+                float:left;
+                padding:5px;	      
+            }
+            #section {
+                height:450px;
+                width:1188px;
+                float:left;
+                padding:10px;
+                text-align: center;
+                overflow:auto
+            }
+            #footer {
+                background-color:black;
+                color:white;
+                clear:both;
+                text-align:center;
+                padding:1px;	 	 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <a href="/"><img src="/static/pic/record.png" align="left" width="126" height="126.5"></a>
+        
+        <div id="header">
+            <H1><font size="10"> 客户资料查询 </font></H1>
+        </div>
+
+        <div id="nav">
+            <br>
+            <a href="/editself">修改个人信息</a>><br><br>
+            <a href="/editpassword">修改密码</a>><br><br>
+            <a href="/querycd">唱片查询</a>><br><br>
+            {% if request.session.is_admin %}
+                <a href="/orderlist">我的订单</a>><br><br>
+                <a href="/userorder">客户订单</a>><br><br>
+                <a href="/queryuser">查看客户资料</a>><br><br>
+            {% else %}
+                <a href="/userorder">订单查询</a>><br>
+            {% endif %}
+        </div>
+
+        <div id="section">
+            <br>
+            <form action="/queryuser/" method="post">
+                {% if message %}
+                    <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
+                {% csrf_token %}
+                <table align="center" border="1">
+                    <tr>
+                        <th align="left"> {{ query_form.username }} </th>
+                        <th align="left"> {{ query_form.name }} </th>
+                        <th align="left"> {{ query_form.email }} </th>
+                        <th align="left"> {{ query_form.tel }} </th>
+                        <th> <input type="submit" value="查询"> </th>
+                        <th>  </th>
+                    </tr>
+                    <tr>
+                        <th align="center"> 用户名 </th>
+                        <th align="center"> 姓名 </th>
+                        <th align="center"> 邮箱地址 </th>
+                        <th align="center"> 电话号码 </th>
+                        <th align="center"> 性别 </th>
+                        <th align="center"> 出生日期 </th>
+                    </tr>
+                    {% for user in user_list %}
+                        <tr>
+                            <td align="center"> {{ user.username }} </th>
+                            <td align="center"> {{ user.name }} </th>
+                            <td align="center"> {{ user.email }} </th>
+                            <td align="center"> {{ user.tel }} </th>
+                            <td align="center"> {{ user.sex }} </th>
+                            <td align="center"> {{ user.birthday }} </th>
+                        </tr>
+                    {% endfor %}
+                </table>
+                <br>
+            </form>
+        </div>
+
+        <div id="footer">
+            Copyright @Brayton's Record
+        </div>
+
+    </body>
+
+</html>

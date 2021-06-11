@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>top10</title>
+        <style>
+            #header {
+                background-color:black;
+                color:white;
+                text-align:center;
+                padding:10px;
+            }
+            #nav {
+                line-height:30px;
+                background-color: #eeeeee;
+                text-align:center;
+                height:470px;
+                width:115px;
+                float:left;
+                padding:5px;	      
+            }
+            #section {
+                height:470px;
+                width:1188px;
+                float:left;
+                padding:10px;	 	 
+            }
+            #footer {
+                background-color:black;
+                color:white;
+                clear:both;
+                text-align:center;
+                padding:1px;	 	 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <a href="/"><img src="/static/pic/record.png" align="left" width="126" height="126.5" ></a>
+        <div id="header">
+            <H1><font size="10"> TOP 10 </font></H1>
+        </div>
+
+        <div id="nav">
+            <br>
+            {% if request.session.is_login %}
+                <a>当前在线：</a>
+                <a> {{ request.session.user_name }} </a><br><br>
+                <a href="/self/">个人主页</a>><br><br>
+                <a href="/querycd">唱片查询</a>><br><br>
+                <a href="/top10">热销榜top10</a>><br><br>
+                <a href="/logout/">退出账号</a>><br><br>
+            {% else %}
+                <a href='/login'>登录</a>><br><br>
+                <a href="/register">注册</a>><br><br>
+            {% endif %}
+            <a href="">了解我们</a>><br>
+        </div>
+
+        <div id="section">
+        <br><br>
+            <table align="center" border="1">
+                    <tr>
+                        <th align="center"> 排名 </th>
+                        <th align="center"> 专辑名 </th>
+                        <th align="center"> 艺人 </th>
+                        <th align="center"> 材质 </th>
+                        <th align="center"> 生产地 </th>
+                        <th align="center"> 销量 </th>
+                        <th align="center">  </th>
+                    </tr>
+                    {% for l in ranklist %}
+                        <tr>
+                            <td align="center"> {{ forloop.counter }} </td>
+                            <td align="center"> {{ l.1 }} </td>
+                            <td align="center"> {{ l.2 }} </td>
+                            {% if l.3 %}
+                                <td align="center"> CD </td>
+                            {% else %}
+                                <td align="center"> 黑胶 </td>
+                            {% endif %}
+                            <td align="center"> {{ l.4 }} </td>
+                            <td align="center"> {{ l.0 }} </td>
+                            {% if l.3 %}
+                                <td align="center"> <a href="/detailcd/?id={{l.5}}"><button type="button">查看专辑信息</button></a> </td>
+                            {% else %}
+                                <td align="center"> <a href="/detailvinyl/?id={{l.5}}"><button type="button">查看专辑信息</button></a> </td>
+                            {% endif %}
+                        </tr>
+                    {% endfor %}
+                </table>
+        </div>
+
+        <div id="footer">
+            Copyright @Brayton's Record
+        </div>
+
+    </body>
+
+</html>

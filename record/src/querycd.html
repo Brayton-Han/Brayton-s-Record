@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>唱片查询</title>
+        <style>
+            #header {
+                background-color:black;
+                color:white;
+                text-align:center;
+                padding:10px;
+            }
+            #nav {
+                line-height:30px;
+                background-color: #eeeeee;
+                text-align:center;
+                height:480px;
+                width:115px;
+                float:left;
+                padding:5px;	      
+            }
+            #section {
+                height:450px;
+                width:1188px;
+                float:left;
+                padding:10px;
+                text-align: center;
+                overflow:auto
+            }
+            #footer {
+                background-color:black;
+                color:white;
+                clear:both;
+                text-align:center;
+                padding:1px;	 	 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <a href="/"><img src="/static/pic/record.png" align="left" width="126" height="126.5"></a>
+        
+        <div id="header">
+            <H1><font size="10"> CD查询 </font></H1>
+        </div>
+
+        <div id="nav">
+            <br>
+            <a href="/querycd">CD查询</a>><br><br>
+            <a href="/queryvinyl">黑胶查询</a>><br><br>
+            <a href="/self">回到个人主页</a>><br><br>
+        </div>
+
+        <div id="section">
+            <br>
+            <form action="/querycd/" method="post">
+                {% if message %}
+                    <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
+                {% csrf_token %}
+                <table align="center" border="1">
+                    <tr>
+                        <th align="center"> {{ query_form.name }} </th>
+                        <th align="center"> {{ query_form.artist }} </th>
+                        <th align="center">  </th>
+                        {% if request.session.is_admin %}
+                            <th align="left">  </th>
+                        {% endif %}
+                        <th align="center">  </th>
+                        <th align="center"> {{ query_form.explicit }} </th>
+                        <th align="center"> {{ query_form.seal_off }} </th>
+                        <th align="center">  </th>
+                        <th> <input type="submit" value="查询"> </th>
+                    </tr>
+                    <tr>
+                        <th align="center"> 专辑名 </th>
+                        <th align="center"> 艺人 </th>
+                        <th align="center"> 售价 </th>
+                        {% if request.session.is_admin %}
+                            <th align="center"> 进货价 </th>
+                        {% endif %}
+                        <th align="center"> 生产地 </th>
+                        <th align="center"> 脏版？ </th>
+                        <th align="center"> 拆封？ </th>
+                        <th align="center"> 库存 </th>
+                        <th align="center"> 详细信息 </th>
+                    </tr>
+                    {% for cd in cd_list %}
+                        <tr>
+                            <td align="center"> {{ cd.name }} </td>
+                            <td align="center"> {{ cd.artist }} </td>
+                            <td align="center"> {{ cd.price }} </td>
+                            {% if request.session.is_admin %}
+                                <td align="center"> {{ cd.cost }} </td>
+                            {% endif %}
+                            <td align="center"> {{ cd.produce_area }} </td>
+                            <td align="center"> {{ cd.explicit }} </td>
+                            <td align="center"> {{ cd.seal_off }} </td>
+                            <td align="center"> {{ cd.remain }} </td>
+                            <td align="center"> <a href="/detailcd/?id={{cd.id}}"><button type="button">查看</button></a> </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                <br>
+            </form>
+        </div>
+
+        <div id="footer">
+            Copyright @Brayton's Record
+        </div>
+
+    </body>
+
+</html>
