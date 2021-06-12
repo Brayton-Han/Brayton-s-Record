@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-link;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><style>/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+</style><style>.markdown-body {
+    font-size: 11px;
+}
+
+img.emoji-img.emoji {
+  max-width: 11px;
+  max-height: 11px;
+  vertical-align: middle;
+}
+</style>
+
+        <!--<script src=""></script>-->
+    </head>
+    <body class="markdown-body">
+        <h1 id="database-project-report">Database Project Report</h1>
+<h5 id="all-by-&#x9648;&#x4FCA;&#x542B;-19307130180">All By: &#x9648;&#x4FCA;&#x542B; 19307130180</h5>
+<hr>
+<h3 id="&#x5B9E;&#x9A8C;&#x9898;&#x76EE;">&#x5B9E;&#x9A8C;&#x9898;&#x76EE;</h3>
+<p><strong>&#x5531;&#x7247;&#x5E97;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x7684;&#x8BBE;&#x8BA1;&#x4E0E;&#x5B9E;&#x73B0;</strong></p>
+<h3 id="&#x5B9E;&#x9A8C;&#x80CC;&#x666F;">&#x5B9E;&#x9A8C;&#x80CC;&#x666F;</h3>
+<p>&#x5531;&#x7247;&#x662F;&#x97F3;&#x4E50;&#x7684;&#x4E00;&#x79CD;&#x627F;&#x8F7D;&#x7269;&#xFF0C;&#x6700;&#x521D;&#x7684;&#x5F62;&#x6001;&#x4E3A;&#x9ED1;&#x80F6;&#x5531;&#x7247;&#xFF0C;&#x540E;&#x6765;&#x9010;&#x6E10;&#x6709;&#x4E86; CD &#x5531;&#x7247;&#x3002;&#x5531;&#x7247;&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x6587;&#x5316;&#x7B26;&#x53F7;&#x548C;&#x827A;&#x672F;&#x8F7D;&#x4F53;&#xFF0C;&#x5176;&#x4EF7;&#x503C;&#x4E0D;&#x8A00;&#x800C;&#x55BB;&#xFF0C;&#x5531;&#x7247;&#x5E97;&#x4E5F;&#x6210;&#x4E3A;&#x4E86;&#x4E00;&#x5EA7;&#x57CE;&#x5E02;&#x6587;&#x5316;&#x6C14;&#x606F;&#x7684;&#x53CD;&#x6620;&#x3002;&#x5531;&#x7247;&#x6587;&#x5316;&#x66FE;&#x5728;&#x4E2D;&#x56FD;&#x98CE;&#x9761;&#x4E00;&#x65F6;&#xFF0C;&#x4F46;&#x968F;&#x7740;&#x4E92;&#x8054;&#x7F51;&#x6280;&#x672F;&#x7684;&#x9010;&#x6B65;&#x53D1;&#x5C55;&#xFF0C;&#x6570;&#x5B57;&#x5A92;&#x4ECB;&#x6324;&#x5151;&#x4E86;&#x5531;&#x7247;&#x7684;&#x751F;&#x5B58;&#x7A7A;&#x95F4;&#xFF0C;&#x5531;&#x7247;&#x5E97;&#x7684;&#x751F;&#x5B58;&#x73AF;&#x5883;&#x9010;&#x6E10;&#x6076;&#x5316;&#xFF0C;&#x4E9F;&#x9700;&#x4ECE;&#x539F;&#x672C;&#x53EA;&#x6709;&#x5B9E;&#x4F53;&#x5E97;&#x7684;&#x6A21;&#x5F0F;&#x6539;&#x4E3A;&#x7EBF;&#x4E0A;+&#x7EBF;&#x4E0B;&#x7684;&#x53CC;&#x6E20;&#x9053;&#x6A21;&#x5F0F;&#xFF0C;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x4E13;&#x4E3A;&#x5176;&#x8BBE;&#x8BA1;&#x7684;&#x6570;&#x636E;&#x5E93;&#x6765;&#x7BA1;&#x7406;&#x5531;&#x7247;&#x3002;</p>
+<h3 id="&#x5F00;&#x53D1;&#x73AF;&#x5883;">&#x5F00;&#x53D1;&#x73AF;&#x5883;</h3>
+<ul>
+<li>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF1A;Windows 10</li>
+<li>&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x8F6F;&#x4EF6;&#xFF1A;pgAdmin 4.30</li>
+<li>&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF1A;Django 3.2, Python3, HTML, CSS, PostgreSQL 13</li>
+<li>&#x5F00;&#x53D1;&#x73AF;&#x5883;&#xFF1A;Visual Studio Code, localhost</li>
+</ul>
+<h3 id="&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;">&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;</h3>
+<ul>
+<li><p>ER&#x56FE;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/ER.png" alt></p></li>
+<li><p>auth_user&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x50A8;&#x5B58;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;&#xFF08;&#x5373;&#x5E97;&#x957F;&#xFF09;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>id</u></strong>&#xFF1A;integer, primarykey, not null  <br>
+<strong>password</strong>&#xFF1A;character varying(128), not null, using MD5  <br>
+<strong>last_login</strong>&#xFF1A;timestamp with time zone  <br>
+<strong>is_superuser</strong>&#xFF1A;boolean, not null  <br>
+<strong>username</strong>&#xFF1A;character varying(150), unique, not null  <br>
+<strong>name</strong>&#xFF1A;character varying(150), not null  <br>
+<strong>email</strong>&#xFF1A;character varying(254), not null  <br>
+<strong>is_staff</strong>&#xFF1A;boolean, not null  <br>
+<strong>is_active</strong>&#xFF1A;boolean, not null  <br>
+<strong>date_joined</strong>&#xFF1A;timestamp with time zone, not null</p></li>
+<li><p>&#x5185;&#x5BB9;&#x5C55;&#x793A;&#xFF08;&#x7531;&#x4E8E;&#x5C5E;&#x6027;&#x8FC7;&#x591A;&#x6545;&#x4EC5;&#x5C55;&#x793A;&#x90E8;&#x5206;&#xFF09;&#xFF1A;<br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/auth_user.png" alt></p></li></ul></li>
+<li><p>user&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x5B58;&#x50A8;&#x6CE8;&#x518C;&#x7528;&#x6237;&#x7684;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>username</u></strong>&#xFF1A;character varying(128), primarykey, not null  <br>
+<strong>password</strong>&#xFF1A;character varying(256), not null, using MD5  <br>
+<strong>name</strong>&#xFF1A;character varying(128), not null  <br>
+<strong>sex</strong>&#xFF1A;character varying(32)  <br>
+<strong>birthday</strong>&#xFF1A;date  <br>
+<strong>email</strong>&#xFF1A;character varying(128)  <br>
+<strong>tel</strong>&#xFF1A;character varying(15), not null  <br>
+<em>order by username</em></p></li>
+<li><p>&#x5185;&#x5BB9;&#x5C55;&#x793A;&#xFF08;&#x7531;&#x4E8E;&#x5C5E;&#x6027;&#x8FC7;&#x591A;&#x6545;&#x4EC5;&#x5C55;&#x793A;&#x90E8;&#x5206;&#xFF09;&#xFF1A;<br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/user.png" alt></p></li></ul></li>
+<li><p>cd&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x5B58;&#x50A8;CD&#x5531;&#x7247;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>id</u></strong>&#xFF1A;integer, primarykey, not null  <br>
+<strong>barcode</strong>&#xFF1A;character varying(13), not null  <br>
+<strong>name</strong>&#xFF1A;character varying(128), not null  <br>
+<strong>artist</strong>&#xFF1A;character varying(128)  <br>
+<strong>cover</strong>&#xFF1A;character varying(100), not null  <br>
+<strong>number</strong>&#xFF1A;integer  <br>
+<strong>genre</strong>&#xFF1A;character varying(128)  <br>
+<strong>produce_area</strong>&#xFF1A;character varying(128), not null  <br>
+<strong>price</strong>&#xFF1A;double precision, not null  <br>
+<strong>cost</strong>&#xFF1A;double precision, not null  <br>
+<strong>seal_off</strong>&#xFF1A;boolean, not null  <br>
+<strong>explicit</strong>&#xFF1A;boolean, not null  <br>
+<strong>remain</strong>&#xFF1A;integer, not null<br>
+<em>unique(barcode, produce_area, cost)</em></p></li>
+<li><p>&#x5185;&#x5BB9;&#x5C55;&#x793A;&#xFF08;&#x7531;&#x4E8E;&#x5C5E;&#x6027;&#x8FC7;&#x591A;&#x6545;&#x4EC5;&#x5C55;&#x793A;&#x90E8;&#x5206;&#xFF09;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/cd.png" alt></p></li></ul></li>
+<li><p>vinyl&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x5B58;&#x50A8;&#x9ED1;&#x80F6;&#x5531;&#x7247;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>id</u></strong>&#xFF1A;integer, primarykey, not null  <br>
+<strong>barcode</strong>&#xFF1A;character varying(13), not null  <br>
+<strong>name</strong>&#xFF1A;character varying(128), not null  <br>
+<strong>artist</strong>&#xFF1A;character varying(128)  <br>
+<strong>cover</strong>&#xFF1A;character varying(100), not null  <br>
+<strong>number</strong>&#xFF1A;integer  <br>
+<strong>genre</strong>&#xFF1A;character varying(128)  <br>
+<strong>produce_area</strong>&#xFF1A;character varying(128), not null  <br>
+<strong>price</strong>&#xFF1A;double precision, not null  <br>
+<strong>cost</strong>&#xFF1A;double precision, not null  <br>
+<strong>second_hand</strong>&#xFF1A;boolean, not null  <br>
+<strong>remain</strong>&#xFF1A;integer, not null<br>
+<em>unique(barcode, produce_area, cost)</em></p></li>
+<li><p>&#x5185;&#x5BB9;&#x5C55;&#x793A;&#xFF08;&#x7531;&#x4E8E;&#x5C5E;&#x6027;&#x8FC7;&#x591A;&#x6545;&#x4EC5;&#x5C55;&#x793A;&#x90E8;&#x5206;&#xFF09;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/vinyl.png" alt></p></li></ul></li>
+<li><p>orderlist&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x8BB0;&#x5F55;&#x5E97;&#x957F;&#x7684;&#x8FDB;&#x8D27;&#x8BA2;&#x5355;&#x4FE1;&#x606F;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>id</u></strong>&#xFF1A;integer, primarykey, not null  <br>
+<strong>time</strong>&#xFF1A;timestamp with time zone, not null  <br>
+<strong>status</strong>&#xFF1A;character varying(5), not null  <br>
+<strong>mark</strong>&#xFF1A;boolean, not null  <br>
+<strong>cd</strong>&#xFF1A;boolean, not null  <br>
+<strong>amount</strong>&#xFF1A;integer, not null  <br>
+<strong>cost</strong>&#xFF1A;double precision, not null, foreignkey(cd/vinyl)  <br>
+<strong>tar</strong>&#xFF1A;integer, not null, foreignkey(cd.id/vinyl.id)  <br>
+<strong>name</strong>&#xFF1A;character varying(128), not null, foreignkey(cd/vinyl)  <br>
+<strong>produce_area</strong>&#xFF1A;character varying(128), not null, foreignkey(cd/vinyl)</p></li>
+<li><p>&#x5185;&#x5BB9;&#x5C55;&#x793A;&#xFF08;&#x7531;&#x4E8E;&#x5C5E;&#x6027;&#x8FC7;&#x591A;&#x6545;&#x4EC5;&#x5C55;&#x793A;&#x90E8;&#x5206;&#xFF09;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/orderlist.png" alt></p></li></ul></li>
+<li><p>userorder&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x8BB0;&#x5F55;&#x7528;&#x6237;&#x7684;&#x8BA2;&#x8D2D;&#x8BA2;&#x5355;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>id</u></strong>&#xFF1A;integer, primarykey, not null  <br>
+<strong>time</strong>&#xFF1A;timestamp with time zone, not null  <br>
+<strong>cd</strong>&#xFF1A;boolean, not null  <br>
+<strong>amount</strong>&#xFF1A;integer, not null  <br>
+<strong>cost</strong>&#xFF1A;double precision, not null, foreignkey(cd/vinyl)  <br>
+<strong>total</strong>&#xFF1A;double precision, not null  <br>
+<strong>tar</strong>&#xFF1A;integer, not null, foreignkey(cd.id/vinyl.id)  <br>
+<strong>username</strong>&#xFF1A;character varying(128), not null, foreignkey(user)  </p></li>
+<li><p>&#x5185;&#x5BB9;&#x5C55;&#x793A;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/userorder.png" alt></p></li></ul></li>
+<li><p>auth_group&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x8BB0;&#x5F55;&#x7BA1;&#x7406;&#x5458;&#x7EC4;&#x7684;&#x4FE1;&#x606F;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>id</u></strong>&#xFF1A;integer, primarykey, not null  <br>
+<strong>name</strong>&#xFF1A;character varying(150), unique, not null  </p></li>
+<li><p>Django&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#xFF0C;&#x7528;&#x4E8E;&#x540E;&#x53F0;&#x7BA1;&#x7406;</p></li></ul></li>
+<li><p>auth_group_permissions&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x8BB0;&#x5F55;&#x7BA1;&#x7406;&#x5458;&#x7EC4;&#x7684;&#x6743;&#x9650;&#x4FE1;&#x606F;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>id</u></strong>&#xFF1A;bigint, primarykey, not null  <br>
+<strong>group_id</strong>&#xFF1A;integer, unique, not null, foreignkey(auth_group.id)  <br>
+<strong>permission_id</strong>&#xFF1A;integer, unique, not null, foreignkey(auth_permissions.id)</p></li>
+<li><p>Django&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#xFF0C;&#x7528;&#x4E8E;&#x540E;&#x53F0;&#x7BA1;&#x7406;</p></li></ul></li>
+<li><p>auth_permissions&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x8BB0;&#x5F55;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x6743;&#x9650;&#x9700;&#x6C42;&#x4FE1;&#x606F;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>id</u></strong>&#xFF1A;integer, primarykey, not null  <br>
+<strong>name</strong>&#xFF1A;character varying(255), not null  <br>
+<strong>content_type_id</strong>&#xFF1A;integer, unique, not null, foreignkey(django_content_type.id)<br>
+<strong>codename</strong>&#xFF1A;character varying(100), unique, not null  </p></li>
+<li><p>&#x5185;&#x5BB9;&#x5C55;&#x793A;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/auth_permission.png" alt></p></li>
+<li><p>Django&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#xFF0C;&#x7528;&#x4E8E;&#x540E;&#x53F0;&#x7BA1;&#x7406;</p></li></ul></li>
+<li><p>captcha_captchastore&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x8BB0;&#x5F55;&#x6709;&#x6548;&#x671F;&#x5DF2;&#x8FC7;&#x7684;&#x9A8C;&#x8BC1;&#x7801;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>id</u></strong>&#xFF1A;bigint, primarykey, not null  <br>
+<strong>challenge</strong>&#xFF1A;character varying(32), not null  <br>
+<strong>response</strong>&#xFF1A;character varying(32), not null  <br>
+<strong>hashkey</strong>&#xFF1A;character varying(40), unique, not null  <br>
+<strong>expiration</strong>&#xFF1A;timestamp with time zone, not null  </p></li>
+<li><p>&#x5185;&#x5BB9;&#x5C55;&#x793A;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/captcha.png" alt></p></li></ul></li>
+<li><p>django_content_type&#x8868;</p>
+<ul>
+<li><p>&#x529F;&#x80FD;&#xFF1A;&#x8BB0;&#x5F55;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6A21;&#x578B;&#x540D;</p></li>
+<li><p>&#x5C5E;&#x6027;&#x53CA;&#x5176;&#x8BF4;&#x660E;&#xFF1A;  <br>
+<strong><u>id</u></strong>&#xFF1A;integer, primarykey, not null  <br>
+<strong>app_label</strong>&#xFF1A;character varying(100), unique, not null  <br>
+<strong>model</strong>&#xFF1A;challenge varying(100), unique, not null</p></li>
+<li><p>&#x5185;&#x5BB9;&#x5C55;&#x793A;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/content_type.png" alt></p></li></ul></li>
+</ul>
+<h3 id="&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;">&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;</h3>
+<ul>
+<li><p>&#x4E3B;&#x9875;&#x9762;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x975E;&#x6CD5;&#x8BBF;&#x95EE;&#x90FD;&#x4F1A;&#x88AB;&#x8F6C;&#x5230;&#x6B64;&#x9875;&#x9762;&#xFF0C;&#x767B;&#x5F55;&#x6210;&#x529F;&#x6216;&#x8005;&#x9000;&#x51FA;&#x8D26;&#x53F7;&#x65F6;&#x4E5F;&#x4F1A;&#x8DF3;&#x8F6C;&#x5230;&#x8FD9;&#x91CC;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+&#x672A;&#x767B;&#x5F55;&#x65F6;&#x7684;&#x4E3B;&#x9875;&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E6%9C%AA%E7%99%BB%E5%BD%95%E4%B8%BB%E9%A1%B5.png" alt>  <br>
+&#x767B;&#x9646;&#x540E;&#x7684;&#x4E3B;&#x9875;&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E7%99%BB%E9%99%86%E5%90%8E%E7%9A%84%E4%B8%BB%E9%A1%B5.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;mainpage.html index()</p></li></ul></li>
+</ul>
+<pre><code class="hljs"><span class="xml"> mainpage.html:
+    &#x5BFC;&#x822A;&#x680F;&#xFF1A;
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> request.session.is_login %}</span><span class="xml">        //&#x767B;&#x5F55;&#x540E;&#x663E;&#x793A;&#x4EE5;&#x4E0B;&#x754C;&#x9762;
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span>&#x5F53;&#x524D;&#x5728;&#x7EBF;&#xFF1A;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span>&gt;</span> </span><span class="hljs-template-variable">{{ user.name }}</span><span class="xml"> <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/self/&quot;</span>&gt;</span>&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&gt;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/querycd&quot;</span>&gt;</span>&#x5531;&#x7247;&#x67E5;&#x8BE2;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&gt;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/top10&quot;</span>&gt;</span>&#x70ED;&#x9500;&#x699C;top10<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&gt;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/logout/&quot;</span>&gt;</span>&#x9000;&#x51FA;&#x8D26;&#x53F7;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&gt;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">else</span></span> %}</span><span class="xml">                               //&#x672A;&#x767B;&#x5F55;&#x5219;&#x663E;&#x793A;&#x4EE5;&#x4E0B;&#x754C;&#x9762;
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&apos;/login&apos;</span>&gt;</span>&#x767B;&#x5F55;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&gt;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/register&quot;</span>&gt;</span>&#x6CE8;&#x518C;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&gt;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+    &#x56FE;&#x7247;&#x52A8;&#x6001;&#x6EDA;&#x52A8;&#xFF1A;
+    <span class="hljs-tag">&lt;<span class="hljs-name">MARQUEE</span> <span class="hljs-attr">onmouseover</span>=<span class="hljs-string">stop()</span> <span class="hljs-attr">onmouseout</span>=<span class="hljs-string">start()</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;left&quot;</span> <span class="hljs-attr">scrollAmount</span>=<span class="hljs-string">&quot;15&quot;</span> <span class="hljs-attr">loop</span>=<span class="hljs-string">infinite</span> <span class="hljs-attr">deplay</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/static/pic/NFR.jpg&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;470&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;470&quot;</span>&gt;</span>
+          ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">MARQUEE</span>&gt;</span>
+ index():
+ def index(request):
+    if request.session.get(&apos;is_login&apos;):   #&#x82E5;&#x767B;&#x5F55;
+       user = models.User.objects.get(username=request.session.get(&apos;user_name&apos;))
+    return render(request,&apos;mainpage.html&apos;, locals())</span></code></pre>
+<ul>
+<li><p>&#x6CE8;&#x518C;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x52A0;&#x4E0A;&#x4E86;&#x9A8C;&#x8BC1;&#x7801;&#x673A;&#x5236;&#x9632;&#x6B62;&#x88AB;&#x6076;&#x610F;&#x6CE8;&#x518C;&#x5927;&#x91CF;&#x8D26;&#x53F7;&#xFF0C;&#x6CE8;&#x518C;&#x6210;&#x529F;&#x4F1A;&#x8DF3;&#x8F6C;&#x5230;&#x767B;&#x5F55;&#x754C;&#x9762;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x8F93;&#x5165;&#x7684;&#x7528;&#x6237;&#x540D;&#x5DF2;&#x5B58;&#x5728;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E6%B3%A8%E5%86%8C%E7%94%A8%E6%88%B7%E5%90%8D.png" alt>  <br>
+&#x4E24;&#x6B21;&#x8F93;&#x5165;&#x7684;&#x5BC6;&#x7801;&#x4E0D;&#x540C;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E6%B3%A8%E5%86%8C%E5%AF%86%E7%A0%81.png" alt>  <br>
+&#x5FC5;&#x586B;&#x9879;&#x672A;&#x586B;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E6%B3%A8%E5%86%8C%E5%BF%85%E9%A1%BB%E5%AD%97%E6%AE%B5%E6%9C%AA%E5%A1%AB%E5%86%99.png" alt>  <br>
+&#x9A8C;&#x8BC1;&#x7801;&#x586B;&#x5199;&#x9519;&#x8BEF;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E6%B3%A8%E5%86%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E9%94%99%E8%AF%AF.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;registration.html register()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">register</span><span class="hljs-params">(request)</span>:</span>
+      <span class="hljs-keyword">if</span> request.session.get(<span class="hljs-string">&apos;is_login&apos;</span>, <span class="hljs-literal">None</span>): <span class="hljs-comment"># &#x767B;&#x5F55;&#x72B6;&#x6001;&#x4E0D;&#x5141;&#x8BB8;&#x6CE8;&#x518C;</span>
+         <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&quot;/&quot;</span>)
+      register_form = RegisterForm()
+      <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+         register_form = RegisterForm(request.POST)
+         <span class="hljs-keyword">if</span> register_form.is_valid():  <span class="hljs-comment"># &#x83B7;&#x53D6;&#x6570;&#x636E;</span>
+            username = register_form.cleaned_data[<span class="hljs-string">&apos;username&apos;</span>]
+            ...
+            <span class="hljs-keyword">if</span> register_form.cleaned_data[<span class="hljs-string">&apos;sex&apos;</span>]:
+                sex = register_form.cleaned_data[<span class="hljs-string">&apos;sex&apos;</span>]
+            <span class="hljs-keyword">else</span>:
+                sex = <span class="hljs-literal">None</span>
+            ...
+            <span class="hljs-keyword">if</span> password1 != password2:  <span class="hljs-comment"># &#x5224;&#x65AD;&#x4E24;&#x6B21;&#x5BC6;&#x7801;&#x662F;&#x5426;&#x76F8;&#x540C;</span>
+                message = <span class="hljs-string">&quot;&#x4E24;&#x6B21;&#x8F93;&#x5165;&#x7684;&#x5BC6;&#x7801;&#x4E0D;&#x540C;&#xFF01;&quot;</span>
+                <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;registration.html&apos;</span>, locals())
+            <span class="hljs-keyword">else</span>:
+                check = models.User.objects.filter(username=username)
+                <span class="hljs-keyword">if</span> check:
+                    message = <span class="hljs-string">&apos;&#x7528;&#x6237;&#x540D;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x8BF7;&#x91CD;&#x65B0;&#x9009;&#x62E9;&#x7528;&#x6237;&#x540D;&#xFF01;&apos;</span>
+                    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;registration.html&apos;</span>, locals())
+                <span class="hljs-comment">#&#x52A0;&#x5BC6;&#x5BC6;&#x7801;</span>
+                md5 = hashlib.md5()
+                md5.update(password1.encode())
+                password_md5 = md5.hexdigest()
+                models.User.objects.create(...)
+                <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;/login/&apos;</span>)  <span class="hljs-comment"># &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x767B;&#x5F55;&#x9875;&#x9762;</span>
+         <span class="hljs-keyword">else</span>:
+            message = <span class="hljs-string">&quot;&#x8BF7;&#x68C0;&#x67E5;&#x586B;&#x5199;&#x7684;&#x5185;&#x5BB9;&quot;</span>
+      <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;registration.html&apos;</span>, locals())</code></pre>
+<ul>
+<li><p>&#x767B;&#x5F55;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x767B;&#x5F55;&#x6210;&#x529F;&#x540E;&#x8F6C;&#x5230;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x7528;&#x6237;&#x540D;&#x4E0D;&#x5B58;&#x5728;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E7%94%A8%E6%88%B7%E5%90%8D%E4%B8%8D%E5%AD%98%E5%9C%A8.png" alt>  <br>
+&#x5BC6;&#x7801;&#x9519;&#x8BEF;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%AF%86%E7%A0%81%E4%B8%8D%E6%AD%A3%E7%A1%AE.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;admin.html login()</p></li></ul>
+<pre><code class="hljs">def login(request):
+   <span class="hljs-keyword">if</span> request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;is_login&apos;</span>, None):  #&#x4E0D;&#x91CD;&#x590D;&#x767B;&#x5F55;
+      return redirect(<span class="hljs-string">&apos;/&apos;</span>)
+   <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+      login_form = UserForm(request.POST)
+      <span class="hljs-keyword">if</span> login_form.is_valid():
+         username = login_form.cleaned_data[<span class="hljs-string">&apos;username&apos;</span>]
+         <span class="hljs-built_in">..</span>.
+         try:
+           <span class="hljs-built_in"> user </span>= models.User.objects.<span class="hljs-builtin-name">get</span>(<span class="hljs-attribute">username</span>=username)
+            <span class="hljs-keyword">if</span> user.password == password_md5:   #&#x5BC6;&#x7801;&#x6B63;&#x786E;&#xFF0C;&#x521B;&#x5EFA;session&#x503C;
+                request.session[<span class="hljs-string">&apos;is_login&apos;</span>] = <span class="hljs-literal">True</span>
+                request.session[<span class="hljs-string">&apos;user_name&apos;</span>] = user.username
+                <span class="hljs-keyword">if</span> user.<span class="hljs-attribute">username</span>==&quot;brayton&quot;:
+                    request.session[<span class="hljs-string">&apos;is_admin&apos;</span>] = <span class="hljs-literal">True</span>
+                <span class="hljs-keyword">else</span>:
+                    request.session[<span class="hljs-string">&apos;is_admin&apos;</span>] = <span class="hljs-literal">False</span>
+                return redirect(<span class="hljs-string">&apos;/index/&apos;</span>)
+            <span class="hljs-keyword">else</span>:
+                message = <span class="hljs-string">&quot;&#x5BC6;&#x7801;&#x4E0D;&#x6B63;&#x786E;&#xFF01;&quot;</span>
+         except:
+            message = <span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&#x4E0D;&#x5B58;&#x5728;&#xFF01;&quot;</span>
+      message = <span class="hljs-string">&quot;&#x8BF7;&#x68C0;&#x67E5;&#x586B;&#x5199;&#x7684;&#x5185;&#x5BB9;&quot;</span>
+      return render(request, <span class="hljs-string">&apos;./admin.html&apos;</span>, locals())
+   login_form = UserForm()
+   return render(request,<span class="hljs-string">&apos;admin.html&apos;</span>, locals())</code></pre></li>
+<li><p>&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x663E;&#x793A;&#x4E2A;&#x4EBA;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x4EE5;&#x53CA;&#x529F;&#x80FD;&#x5BFC;&#x822A;&#x680F;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+&#x7528;&#x6237;&#x7684;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5.png" alt>  <br>
+&#x5E97;&#x957F;&#x7684;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;&#xFF0C;&#x4F1A;&#x53D1;&#x73B0;&#x5DE6;&#x4FA7;&#x5BFC;&#x822A;&#x680F;&#x4E0E;&#x7528;&#x6237;&#x7684;&#x4E0D;&#x540C;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%BA%97%E9%95%BF%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;selfpage.html self()</p></li></ul></li>
+</ul>
+<pre><code class="hljs"><span class="xml">   selfpage.html:
+   </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> request.session.is_admin %}</span><span class="xml">     //&#x5E97;&#x957F;&#x624D;&#x80FD;&#x8BBF;&#x95EE;&#x7684;&#x529F;&#x80FD;
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/orderlist&quot;</span>&gt;</span>&#x6211;&#x7684;&#x8BA2;&#x5355;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&gt;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/userorder&quot;</span>&gt;</span>&#x5BA2;&#x6237;&#x8BA2;&#x5355;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&gt;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/queryuser&quot;</span>&gt;</span>&#x67E5;&#x770B;&#x5BA2;&#x6237;&#x8D44;&#x6599;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&gt;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+   </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">else</span></span> %}</span><span class="xml">                            //&#x7528;&#x6237;&#x80FD;&#x591F;&#x8BBF;&#x95EE;&#x7684;&#x529F;&#x80FD;
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/userorder&quot;</span>&gt;</span>&#x8BA2;&#x5355;&#x67E5;&#x8BE2;<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>&gt;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+   </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
+   self():
+   def self(request):
+      if request.session.get(&apos;is_login&apos;):   #&#x767B;&#x5F55;&#x624D;&#x80FD;&#x8BBF;&#x95EE;
+         user = models.User.objects.get(username=request.session.get(&apos;user_name&apos;))
+         return render(request, &quot;selfpage.html&quot;, locals())
+      return redirect(&apos;/&apos;)</span></code></pre>
+<ul>
+<li><p>&#x4FEE;&#x6539;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x4FEE;&#x6539;&#x6210;&#x529F;&#x540E;&#x8DF3;&#x8F6C;&#x5230;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x7528;&#x6237;&#x540D;&#x5DF2;&#x5B58;&#x5728;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9%E4%BF%A1%E6%81%AF%E7%94%A8%E6%88%B7%E5%90%8D%E5%AD%98%E5%9C%A8.png" alt>  <br>
+&#x4FEE;&#x6539;&#x6210;&#x529F;&#x9875;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9%E4%BF%A1%E6%81%AF%E6%88%90%E5%8A%9F.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;editself.html editself()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   def editself(request):
+      <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;is_login&apos;</span>, None): # &#x672C;&#x6765;&#x5C31;&#x672A;&#x767B;&#x5F55;
+         return redirect(<span class="hljs-string">&quot;/&quot;</span>)
+     <span class="hljs-built_in"> user </span>= models.User.objects.<span class="hljs-builtin-name">get</span>(<span class="hljs-attribute">username</span>=request.session.get(&apos;user_name&apos;))
+      edit_form = EditForm(initial={<span class="hljs-string">&quot;username&quot;</span>:user.username, <span class="hljs-string">&quot;name&quot;</span>:user.name, <span class="hljs-string">&quot;sex&quot;</span>:user.sex,
+                             <span class="hljs-string">&quot;birthday&quot;</span>:user.birthday, <span class="hljs-string">&quot;email&quot;</span>:user.email, <span class="hljs-string">&quot;tel&quot;</span>:user.tel})  #&#x521D;&#x59CB;&#x5316;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x4FEE;&#x6539;&#x4FE1;&#x606F;
+      <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+         e_form = EditForm(request.POST)
+         <span class="hljs-keyword">if</span> e_form.is_valid():
+            username = e_form.cleaned_data[<span class="hljs-string">&apos;username&apos;</span>]
+            <span class="hljs-built_in">..</span>.
+            <span class="hljs-keyword">if</span> e_form.cleaned_data[<span class="hljs-string">&apos;sex&apos;</span>]:
+                sex = e_form.cleaned_data[<span class="hljs-string">&apos;sex&apos;</span>]
+            <span class="hljs-keyword">else</span>:
+                sex = None
+            <span class="hljs-built_in">..</span>.
+            <span class="hljs-keyword">if</span> username != user.username:
+                check = models.User.objects.filter(<span class="hljs-attribute">username</span>=username)
+                <span class="hljs-keyword">if</span> check:
+                    message = <span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x8BF7;&#x91CD;&#x65B0;&#x9009;&#x62E9;&#x7528;&#x6237;&#x540D;&#xFF01;&quot;</span>
+                    return render(request, <span class="hljs-string">&apos;editself.html&apos;</span>, locals())
+                models.User.objects.filter(<span class="hljs-attribute">username</span>=user.username).update(username=username)
+                request.session[<span class="hljs-string">&apos;user_name&apos;</span>] = username  #&#x5F88;&#x91CD;&#x8981;
+                message = <span class="hljs-string">&quot;&#x5DF2;&#x6210;&#x529F;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x540D;&quot;</span>
+            <span class="hljs-keyword">if</span> name != user.name:
+                models.User.objects.filter(<span class="hljs-attribute">username</span>=username).update(name=name)
+            <span class="hljs-built_in">..</span>.
+            message = <span class="hljs-string">&quot;&#x5DF2;&#x6210;&#x529F;&#x4FEE;&#x6539;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;&quot;</span>
+            return redirect(<span class="hljs-string">&apos;/self/&apos;</span>)  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;
+      return render(request, <span class="hljs-string">&quot;editself.html&quot;</span>, locals())</code></pre>
+<ul>
+<li><p>&#x4FEE;&#x6539;&#x5BC6;&#x7801;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x4FEE;&#x6539;&#x6210;&#x529F;&#x540E;&#x8DF3;&#x8F6C;&#x5230;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x539F;&#x5BC6;&#x7801;&#x9519;&#x8BEF;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81%E5%8E%9F%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF1.png" alt> <img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81%E5%8E%9F%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF2.png" alt>  <br>
+&#x4E24;&#x6B21;&#x5BC6;&#x7801;&#x4E0D;&#x4E00;&#x81F4;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81%E4%B8%8D%E4%B8%80%E8%87%B41.png" alt> <img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81%E4%B8%8D%E4%B8%80%E8%87%B42.png" alt>  <br>
+&#x4FEE;&#x6539;&#x6210;&#x529F;&#x793A;&#x8303;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81%E6%88%90%E5%8A%9F.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;editpassword.html editpassword()</p></li></ul>
+<pre><code class="hljs">def editpassword(request):
+  <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;is_login&apos;</span>, None): # &#x672C;&#x6765;&#x5C31;&#x672A;&#x767B;&#x5F55;&#xFF0C;&#x8FD4;&#x56DE;&#x4E3B;&#x9875;
+     return redirect(<span class="hljs-string">&quot;/index/&quot;</span>)
+ <span class="hljs-built_in"> user </span>= models.User.objects.<span class="hljs-builtin-name">get</span>(<span class="hljs-attribute">username</span>=request.session.get(&apos;user_name&apos;))
+  edit_form = EditForm2()
+  <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+     e_form = EditForm2(request.POST)
+     <span class="hljs-keyword">if</span> e_form.is_valid():
+        password = e_form.cleaned_data[<span class="hljs-string">&apos;password&apos;</span>]
+        <span class="hljs-built_in">..</span>.
+        <span class="hljs-keyword">if</span> password_md5 != user.password:
+            message = <span class="hljs-string">&quot;&#x539F;&#x5BC6;&#x7801;&#x8F93;&#x5165;&#x9519;&#x8BEF;&#xFF01;&quot;</span>
+            return render(request, <span class="hljs-string">&quot;editpassword.html&quot;</span>, locals())
+        <span class="hljs-keyword">if</span> password1 != password2:  # &#x5224;&#x65AD;&#x4E24;&#x6B21;&#x5BC6;&#x7801;&#x662F;&#x5426;&#x76F8;&#x540C;
+            message = <span class="hljs-string">&quot;&#x4E24;&#x6B21;&#x8F93;&#x5165;&#x7684;&#x5BC6;&#x7801;&#x4E0D;&#x540C;&#xFF01;&quot;</span>
+            return render(request, <span class="hljs-string">&quot;editpassword.html&quot;</span>, locals())
+        <span class="hljs-built_in">..</span>.
+        models.User.objects.filter(<span class="hljs-attribute">username</span>=user.username).update(password=password_md5)
+        message = <span class="hljs-string">&quot;&#x5DF2;&#x6210;&#x529F;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&quot;</span>
+        return redirect(<span class="hljs-string">&apos;/self/&apos;</span>)  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x4E2A;&#x4EBA;&#x4E3B;&#x9875;
+  return render(request, <span class="hljs-string">&quot;editpassword.html&quot;</span>, locals())</code></pre></li>
+<li><p>&#x5531;&#x7247;&#x67E5;&#x8BE2;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x67E5;&#x8BE2;&#x7C7B;&#x578B;&#x4E3A;CD&#x7684;&#x5531;&#x7247;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x603B;&#x9875;&#x9762;&#x4EE5;&#x53CA;&#x5404;CD&#x7684;&#x8BE6;&#x7EC6;&#x9875;&#x9762;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+CD&#x67E5;&#x8BE2;&#x603B;&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/CD%E6%9F%A5%E8%AF%A2.png" alt>  <br>
+&#x9ED1;&#x80F6;&#x67E5;&#x8BE2;&#x603B;&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E9%BB%91%E8%83%B6%E6%9F%A5%E8%AF%A2.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x53EA;&#x770B;&#x810F;&#x7248;CD&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/cd%E6%9F%A5%E8%AF%A21.png" alt>  <br>
+&#x67E5;&#x8BE2;&#x4E13;&#x8F91;&#x540D;&#x4E3A;Folklore&#x7684;&#x810F;&#x7248;CD&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/cd%E6%9F%A5%E8%AF%A22.png" alt>  <br>
+&#x70B9;&#x51FB;&#x201C;&#x67E5;&#x770B;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x83B7;&#x53D6;CD&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF1A;<br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/cd%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF.png" alt>  <br>
+&#x67D0;&#x9ED1;&#x80F6;&#x5531;&#x7247;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x5C01;&#x9762;&#x56FE;&#x8981;&#x6BD4;CD&#x5531;&#x7247;&#x7684;&#x56FE;&#x66F4;&#x5927;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E9%BB%91%E8%83%B6%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF.png" alt>  <br>
+&#x5E97;&#x957F;&#x7684;&#x4E13;&#x8F91;&#x4FE1;&#x606F;&#x9875;&#x9762;&#xFF0C;&#x62E5;&#x6709;&#x201C;&#x4FEE;&#x6539;&#x5531;&#x7247;&#x4FE1;&#x606F;&#x201D;&#x548C;&#x201C;&#x8FDB;&#x8D27;&#x201D;&#x6309;&#x94AE;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%BA%97%E9%95%BFcd%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;querycd.html detailcd.html queryvinyl.html detailvinyl.html querycd() detailcd() queryvinyl() detailvinyl()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   querycd.htm<span class="hljs-variable">l:</span>
+   {% <span class="hljs-keyword">if</span> request.session.is_admin %}   //&#x53EA;&#x6709;&#x5E97;&#x957F;&#x80FD;&#x591F;&#x770B;&#x5230;&#x8FDB;&#x8D27;&#x4EF7;
+        &lt;<span class="hljs-keyword">th</span> align=<span class="hljs-string">&quot;center&quot;</span>&gt; &#x8FDB;&#x8D27;&#x4EF7; &lt;/<span class="hljs-keyword">th</span>&gt;
+   {% <span class="hljs-keyword">endif</span> %}
+   detailcd.htm<span class="hljs-variable">l:</span>
+   {% <span class="hljs-keyword">if</span> request.session.is_admin %}   //&#x5E97;&#x957F;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x5531;&#x7247;&#x4FE1;&#x606F;&#x548C;&#x8FDB;&#x8D27;
+          &lt;<span class="hljs-keyword">a</span> href=<span class="hljs-string">&quot;/editcd/?id={{cd.id}}&quot;</span>&gt;&lt;button <span class="hljs-built_in">type</span>=<span class="hljs-string">&quot;button&quot;</span> align=<span class="hljs-string">&quot;right&quot;</span>&gt;&#x4FEE;&#x6539;&#x5531;&#x7247;&#x4FE1;&#x606F;&lt;/button&gt;&lt;/<span class="hljs-keyword">a</span>&gt;     //&#x7528;url&#x4F20;&#x9012;id&#x53C2;&#x6570;
+          &lt;<span class="hljs-keyword">a</span> href=<span class="hljs-string">&quot;/preordercd/?id={{cd.id}}&quot;</span>&gt;&lt;button <span class="hljs-built_in">type</span>=<span class="hljs-string">&quot;button&quot;</span> align=<span class="hljs-string">&quot;right&quot;</span>&gt;&#x8FDB;&#x8D27;&lt;/button&gt;&lt;/<span class="hljs-keyword">a</span>&gt;
+   {% <span class="hljs-keyword">else</span> %}                          //&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x8D2D;&#x4E70;&#x5531;&#x7247;
+          &lt;<span class="hljs-keyword">a</span> href=<span class="hljs-string">&quot;/buycd/?id={{cd.id}}&quot;</span>&gt;&lt;button <span class="hljs-built_in">type</span>=<span class="hljs-string">&quot;button&quot;</span> align=<span class="hljs-string">&quot;right&quot;</span>&gt;&#x8D2D;&#x4E70;&lt;/button&gt;&lt;/<span class="hljs-keyword">a</span>&gt;
+   {% <span class="hljs-keyword">endif</span> %}
+   querycd():
+   def querycd(request):
+      <span class="hljs-keyword">if</span> request.session.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;is_login&apos;</span>)==False: # &#x672A;&#x767B;&#x5F55;&#x65F6;&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x6B64;&#x529F;&#x80FD;
+         <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&quot;/&quot;</span>)
+      query_form = QuerycdForm(initial={<span class="hljs-string">&quot;explicit&quot;</span>:True})
+      cd_list = models.<span class="hljs-keyword">cd</span>.objects.<span class="hljs-keyword">all</span>()
+      <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+         query_form = QuerycdForm(request.POST)
+         <span class="hljs-keyword">if</span> query_form.is_valid():  # &#x83B7;&#x53D6;&#x6570;&#x636E;
+            <span class="hljs-keyword">if</span> query_form.cleaned_data[<span class="hljs-string">&apos;name&apos;</span>]:
+                cd_list = cd_list.<span class="hljs-built_in">filter</span>(name=query_form.cleaned_data[<span class="hljs-string">&apos;name&apos;</span>])
+            ...
+            cd_list = cd_list.<span class="hljs-built_in">filter</span>(explicit=query_form.cleaned_data[<span class="hljs-string">&apos;explicit&apos;</span>])
+            ...
+      <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&quot;querycd.html&quot;</span>, locals())
+   detailcd():
+   def detailcd(request):
+      <span class="hljs-keyword">if</span> request.session.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;is_login&apos;</span>):  #&#x767B;&#x5F55;&#x540E;&#x624D;&#x80FD;&#x4F7F;&#x7528;
+         <span class="hljs-keyword">if</span> request.GET.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;id&apos;</span>):   #&#x82E5;url&#x5E26;&#x6709;&#x53C2;&#x6570;&#x5219;&#x4F7F;&#x7528;&#xFF0C;&#x82E5;&#x6CA1;&#x6709;&#x5219;&#x7528;session&#x7684;&#x4FE1;&#x606F;
+            <span class="hljs-keyword">cd</span> = models.<span class="hljs-keyword">cd</span>.objects.<span class="hljs-built_in">get</span>(id = request.GET.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;id&apos;</span>))
+            <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&quot;detailcd.html&quot;</span>, locals())
+         <span class="hljs-keyword">cd</span> = models.<span class="hljs-keyword">cd</span>.objects.<span class="hljs-built_in">get</span>(id = request.session.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;id&apos;</span>))
+         <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&quot;detailcd.html&quot;</span>, locals())
+      <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;/&apos;</span>)</code></pre>
+<ul>
+<li><p>&#x8D2D;&#x4E70;&#x5531;&#x7247;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x53EA;&#x6709;&#x7528;&#x6237;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x6B64;&#x529F;&#x80FD;&#xFF0C;&#x5E97;&#x957F;&#x7981;&#x6B62;&#x4F7F;&#x7528;&#xFF0C;&#x8D2D;&#x4E70;&#x6210;&#x529F;&#x540E;&#x4F1A;&#x8DF3;&#x8F6C;&#x81F3;&#x4E2A;&#x4EBA;&#x8BA2;&#x5355;&#x9875;&#x9762;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/cd%E8%B4%AD%E4%B9%B0.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x8F93;&#x5165;&#x7684;&#x8D2D;&#x4E70;&#x6570;&#x91CF;&#x5927;&#x4E8E;&#x5E93;&#x5B58;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/cd%E8%B4%AD%E4%B9%B0%E5%A4%B1%E8%B4%A51.png" alt>  <br>
+&#x8F93;&#x5165;&#x7684;&#x8D2D;&#x4E70;&#x6570;&#x91CF;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x96F6;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/cd%E8%B4%AD%E4%B9%B0%E5%A4%B1%E8%B4%A52.png" alt>  <br>
+&#x8F93;&#x5165;&#x5408;&#x9002;&#x7684;&#x8D2D;&#x4E70;&#x6570;&#x91CF;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/cd%E8%B4%AD%E4%B9%B0%E6%88%90%E5%8A%9F.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;buycd.html buycd()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   def buycd(request):
+      <span class="hljs-keyword">if</span> request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;is_login&apos;</span>) <span class="hljs-keyword">and</span> request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;is_admin&apos;</span>)==<span class="hljs-literal">False</span>:  #&#x53EA;&#x6709;&#x767B;&#x5F55;&#x4E86;&#x7684;&#x7528;&#x6237;&#x624D;&#x80FD;&#x4F7F;&#x7528;
+         <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;GET&quot;</span>:
+            request.session[<span class="hljs-string">&apos;id&apos;</span>] = request.GET.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;id&apos;</span>)
+            cd = models.cd.objects.<span class="hljs-builtin-name">get</span>(id = request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;id&apos;</span>))
+            buyform = PreorderForm()
+            return render(request, <span class="hljs-string">&quot;buycd.html&quot;</span>, locals())
+         <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+            buyform = PreorderForm(request.POST)
+            id_ = request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;id&apos;</span>)
+            cd = models.cd.objects.<span class="hljs-builtin-name">get</span>(id = id_)
+            <span class="hljs-keyword">if</span> buyform.is_valid():
+                amount = buyform.cleaned_data[<span class="hljs-string">&apos;amount&apos;</span>]
+                <span class="hljs-keyword">if</span> amount&gt;cd.remain:
+                    message = <span class="hljs-string">&quot;&#x5E93;&#x5B58;&#x4E0D;&#x8DB3;&#xFF01;&quot;</span>
+                    return render(request, <span class="hljs-string">&quot;buycd.html&quot;</span>, locals())  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x5531;&#x7247;&#x7F16;&#x8F91;&#x9875;&#x9762;
+                <span class="hljs-keyword">if</span> amount&lt;=0:
+                    message = <span class="hljs-string">&quot;&#x8D2D;&#x4E70;&#x6570;&#x91CF;&#x5FC5;&#x987B;&#x5927;&#x4E8E;0&#xFF01;&quot;</span>
+                    return render(request, <span class="hljs-string">&quot;buycd.html&quot;</span>, locals())  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x5531;&#x7247;&#x7F16;&#x8F91;&#x9875;&#x9762;
+                total = amount<span class="hljs-number">*cd</span>.cost
+                model.userorder.objects.create(<span class="hljs-attribute">cd</span>=<span class="hljs-literal">True</span>, <span class="hljs-attribute">amount</span>=amount, <span class="hljs-attribute">tar</span>=id_, <span class="hljs-attribute">cost</span>=cd.cost, <span class="hljs-attribute">total</span>=total, <span class="hljs-attribute">username</span>=request.session.get(&apos;user_name&apos;))  #&#x521B;&#x5EFA;&#x8BA2;&#x5355;
+                remain = cd.remain
+                models.cd.objects.filter(<span class="hljs-attribute">id</span>=id_).update(remain=remain-amount)  #&#x4FEE;&#x6539;&#x5E93;&#x5B58;
+                return redirect(<span class="hljs-string">&apos;/userorder&apos;</span>)  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x8BA2;&#x5355;&#x5217;&#x8868;
+            message = <span class="hljs-string">&quot;&#x8BF7;&#x68C0;&#x67E5;&#x586B;&#x5199;&#x7684;&#x5185;&#x5BB9;&#xFF01;&quot;</span>
+            return render(request, <span class="hljs-string">&quot;buycd.html&quot;</span>, {<span class="hljs-string">&apos;cd&apos;</span>:cd})  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x5531;&#x7247;&#x7F16;&#x8F91;&#x9875;&#x9762;
+      return redirect(<span class="hljs-string">&apos;/&apos;</span>)</code></pre>
+<ul>
+<li><p>&#x7528;&#x6237;&#x8BA2;&#x5355;&#x67E5;&#x8BE2;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x53EA;&#x9488;&#x5BF9;&#x7528;&#x6237;&#xFF0C;&#x6BCF;&#x4F4D;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x67E5;&#x8BE2;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x6240;&#x6709;&#x8BA2;&#x5355;&#x4FE1;&#x606F;&#xFF0C;&#x9876;&#x90E8;&#x53EF;&#x770B;&#x5230;&#x603B;&#x652F;&#x51FA;&#x60C5;&#x51B5;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E7%94%A8%E6%88%B7%E8%AE%A2%E5%8D%95%E9%A1%B5%E9%9D%A2.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x9009;&#x62E9;2021-06-08&#x5230;2021-06-10&#x7684;&#x8BA2;&#x5355;&#x4FE1;&#x606F;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E7%94%A8%E6%88%B7%E8%AE%A2%E5%8D%95%E7%AD%9B%E9%80%89.png" alt>  <br>
+&#x9009;&#x62E9;2021-06-08&#x5230;2021-06-11&#x7684;&#x8BA2;&#x5355;&#x4FE1;&#x606F;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E7%94%A8%E6%88%B7%E8%AE%A2%E5%8D%95%E7%AD%9B%E9%80%891.png" alt>  <br>
+&#x70B9;&#x51FB;&#x201C;&#x67E5;&#x770B;&#x4E13;&#x8F91;&#x4FE1;&#x606F;&#x201D;&#x6309;&#x94AE;&#xFF0C;&#x53D1;&#x73B0;&#x5E93;&#x5B58;&#x7531;&#x4E4B;&#x524D;&#x7684;8&#x53D8;&#x6210;&#x4E86;6&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%AE%A2%E6%88%B7%E8%AE%A2%E5%8D%95%E5%94%B1%E7%89%87%E4%BF%A1%E6%81%AF.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;userorder.html userorder()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   userorder.html&#xFF1A;
+   {% <span class="hljs-keyword">for</span> order in orderlist %}   //&#x4F7F;&#x7528;<span class="hljs-keyword">for</span>&#x5FAA;&#x73AF;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x5217;
+       ...
+   {% <span class="hljs-keyword">endfor</span> %}
+   {% <span class="hljs-keyword">if</span> request.session.is_admin %}    //&#x53EA;&#x6709;&#x5E97;&#x957F;&#x67E5;&#x770B;&#x8BE5;&#x754C;&#x9762;&#x65F6;&#x624D;&#x663E;&#x793A;&#x7528;&#x6237;&#x540D;
+        &lt;<span class="hljs-keyword">th</span> align=<span class="hljs-string">&quot;center&quot;</span>&gt; &#x7528;&#x6237;&#x540D; &lt;/<span class="hljs-keyword">th</span>&gt;
+   {% <span class="hljs-keyword">endif</span> %}
+   {% <span class="hljs-keyword">if</span> order.<span class="hljs-keyword">cd</span> %}        //&#x82E5;order.<span class="hljs-keyword">cd</span>==True&#x5219;&#x663E;&#x793A;CD&#xFF0C;&#x5426;&#x5219;&#x663E;&#x793A;&#x9ED1;&#x80F6;
+        &lt;td align=<span class="hljs-string">&quot;center&quot;</span>&gt; CD &lt;/<span class="hljs-keyword">th</span>&gt;
+   {% <span class="hljs-keyword">else</span> %}
+        &lt;td align=<span class="hljs-string">&quot;center&quot;</span>&gt; &#x9ED1;&#x80F6; &lt;/<span class="hljs-keyword">th</span>&gt;
+   {% <span class="hljs-keyword">endif</span> %}
+   userorder():
+   def userorder(request):
+      <span class="hljs-keyword">if</span> request.session.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;is_login&apos;</span>):   #&#x767B;&#x5F55;&#x624D;&#x80FD;&#x7528;
+         <span class="hljs-keyword">if</span> request.session.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;is_admin&apos;</span>):    #&#x5E97;&#x957F;&#x7684;&#x529F;&#x80FD;&#x533A;
+            orderlist = model.userorder.objects.<span class="hljs-keyword">all</span>()
+            timeform = TimeForm(initial={<span class="hljs-string">&apos;start&apos;</span>:<span class="hljs-string">&apos;2021-06-08&apos;</span>, <span class="hljs-string">&apos;end&apos;</span>:<span class="hljs-string">&apos;2021-&apos;</span>})
+            income = orderlist.aggregate(Sum(<span class="hljs-string">&apos;total&apos;</span>))[<span class="hljs-string">&apos;total__sum&apos;</span>]
+            <span class="hljs-keyword">if</span> request.method==<span class="hljs-string">&apos;POST&apos;</span>:
+                timeform = TimeForm(request.POST)
+                <span class="hljs-keyword">if</span> timeform.is_valid():
+                    start = timeform.cleaned_data[<span class="hljs-string">&apos;start&apos;</span>]
+                    end = timeform.cleaned_data[<span class="hljs-string">&apos;end&apos;</span>]
+                    orderlist = orderlist.<span class="hljs-built_in">filter</span>(time__date__gte=start)  #&#x8D77;&#x59CB;&#x65E5;&#x671F;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x5F53;&#x524D;&#x65F6;&#x95F4;
+                    orderlist = orderlist.<span class="hljs-built_in">filter</span>(time__date__lte=end)
+                    income = orderlist.aggregate(Sum(<span class="hljs-string">&apos;total&apos;</span>))[<span class="hljs-string">&apos;total__sum&apos;</span>]   #&#x4F7F;&#x7528;&#x805A;&#x96C6;&#x51FD;&#x6570;&#x7B97;&#x51FA;&#x6536;&#x5165;
+         <span class="hljs-keyword">else</span>:                #&#x7528;&#x6237;&#x7684;&#x529F;&#x80FD;&#x533A;
+            orderlist = model.userorder.objects.<span class="hljs-built_in">filter</span>(username=request.session.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;user_name&apos;</span>))
+            timeform = ...
+            money = orderlist.aggregate(Sum(<span class="hljs-string">&apos;total&apos;</span>))[<span class="hljs-string">&apos;total__sum&apos;</span>]
+            <span class="hljs-keyword">if</span> request.method==<span class="hljs-string">&apos;POST&apos;</span>:
+                timeform = TimeForm(request.POST)
+                <span class="hljs-keyword">if</span> timeform.is_valid():
+                    ...
+                    money = orderlist.aggregate(Sum(<span class="hljs-string">&apos;total&apos;</span>))[<span class="hljs-string">&apos;total__sum&apos;</span>]
+         <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&quot;userorder.html&quot;</span>, locals())
+      <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;/&apos;</span>)</code></pre>
+<ul>
+<li><p>&#x70ED;&#x95E8;&#x699C;top10</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x5373;&#x5531;&#x7247;&#x5E97;&#x5356;&#x5F97;&#x6700;&#x706B;&#x7684;&#x524D;10&#x5F20;&#x5531;&#x7247;&#xFF0C;&#x63D0;&#x4F9B;&#x76F8;&#x5173;&#x5531;&#x7247;&#x7684;&#x7D22;&#x5F15;&#x6309;&#x94AE;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/top10.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;top10.html top10()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   def top10(request):
+      <span class="hljs-keyword">if</span> request.<span class="hljs-keyword">session</span>.<span class="hljs-keyword">get</span>(<span class="hljs-string">&apos;is_login&apos;</span>):     #&#x767B;&#x5F55;&#x624D;&#x80FD;&#x4F7F;&#x7528;
+         <span class="hljs-keyword">cursor</span>=<span class="hljs-keyword">connection</span>.<span class="hljs-keyword">cursor</span>()   #&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;
+         <span class="hljs-keyword">cursor</span>.<span class="hljs-keyword">execute</span>(&quot;select sum(amount), name, artist, cd, produce_area, tar from cd_cd join list_userorder on cd_cd.id=tar where cd=True group by name, cd, artist, produce_area, tar&quot;)    #&#x67E5;&#x8BE2;cd&#x8868;
+         r1 = <span class="hljs-keyword">cursor</span>.fetchall()   #&#x83B7;&#x53D6;&#x67E5;&#x8BE2;&#x7ED3;&#x679C;
+         <span class="hljs-keyword">cursor</span>=<span class="hljs-keyword">connection</span>.<span class="hljs-keyword">cursor</span>()
+         <span class="hljs-keyword">cursor</span>.<span class="hljs-keyword">execute</span>(&quot;select sum(amount), name, artist, cd, produce_area, tar from cd_vinyl join list_userorder on cd_vinyl.id=tar where cd=False group by name, cd, artist, produce_area, tar&quot;)   #&#x67E5;&#x8BE2;&#x9ED1;&#x80F6;&#x8868;
+         r2 = <span class="hljs-keyword">cursor</span>.fetchall()
+         ranklist = chain(r1, r2)   #&#x5408;&#x5E76;&#x4E24;&#x8868;
+         ranklist = sorted(ranklist, <span class="hljs-keyword">reverse</span>=<span class="hljs-keyword">True</span>)   #&#x9500;&#x91CF;&#x6700;&#x9AD8;&#x7684;&#x6392;&#x5728;&#x524D;&#x9762;
+         ranklist = ranklist[<span class="hljs-number">0</span>:<span class="hljs-number">10</span>]    #&#x622A;&#x53D6;&#x524D;&#x5341;&#x5217;
+         <span class="hljs-keyword">return</span> render(request, &quot;top10.html&quot;, {<span class="hljs-string">&apos;ranklist&apos;</span>:ranklist})
+      <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;/&apos;</span>)</code></pre>
+<ul>
+<li><p>&#x4FEE;&#x6539;&#x5531;&#x7247;&#x4FE1;&#x606F;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x53EA;&#x6709;&#x5E97;&#x957F;&#x80FD;&#x4F7F;&#x7528;&#x6B64;&#x529F;&#x80FD;&#xFF0C;&#x4FEE;&#x6539;&#x6210;&#x529F;&#x540E;&#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x81F3;&#x8BE5;&#x5531;&#x7247;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x9875;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9cd%E4%BF%A1%E6%81%AF.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x4FEE;&#x6539;&#x5531;&#x7247;Blue Weekend&#x7684;3&#x4E2A;&#x9700;&#x4FDD;&#x6301;unique&#x7684;&#x5C5E;&#x6027;&#x4E3A;&#x5531;&#x7247;25&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x62A5;&#x9519;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9cd%E4%BF%A1%E6%81%AF1.png" alt>  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BF%AE%E6%94%B9cd%E4%BF%A1%E6%81%AF2.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;editcd.html editcd()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   def editcd(request):
+      <span class="hljs-keyword">if</span> request.session.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;is_admin&apos;</span>):      #&#x5E97;&#x957F;&#x624D;&#x80FD;&#x4F7F;&#x7528;
+         <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;GET&quot;</span>:
+            request.session[<span class="hljs-string">&apos;id&apos;</span>] = request.GET.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;id&apos;</span>)
+            <span class="hljs-keyword">cd</span> = models.<span class="hljs-keyword">cd</span>.objects.<span class="hljs-built_in">get</span>(id = request.session.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;id&apos;</span>))
+            edit_form = EditcdForm(initial={<span class="hljs-string">&quot;barcode&quot;</span>:<span class="hljs-keyword">cd</span>.barcode, <span class="hljs-string">&quot;name&quot;</span>:<span class="hljs-keyword">cd</span>.name, <span class="hljs-string">&quot;artist&quot;</span>:<span class="hljs-keyword">cd</span>.artist, <span class="hljs-string">&quot;number&quot;</span>:<span class="hljs-keyword">cd</span>.<span class="hljs-keyword">number</span>, <span class="hljs-string">&quot;genre&quot;</span>:<span class="hljs-keyword">cd</span>.genre, <span class="hljs-string">&quot;produce_area&quot;</span>:<span class="hljs-keyword">cd</span>.produce_area, <span class="hljs-string">&quot;price&quot;</span>:<span class="hljs-keyword">cd</span>.price, <span class="hljs-string">&quot;cost&quot;</span>:<span class="hljs-keyword">cd</span>.cost, <span class="hljs-string">&quot;seal_off&quot;</span>:<span class="hljs-keyword">cd</span>.seal_off, <span class="hljs-string">&quot;explicit&quot;</span>:<span class="hljs-keyword">cd</span>.explicit, <span class="hljs-string">&quot;remain&quot;</span>:<span class="hljs-keyword">cd</span>.remain})  #&#x521D;&#x59CB;&#x5316;&#x65B9;&#x4FBF;&#x5E97;&#x957F;&#x4FEE;&#x6539;&#x4FE1;&#x606F;
+            <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&quot;editcd.html&quot;</span>, locals())
+         <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+            edit_form = EditcdForm(request.POST)
+            id_ = request.session.<span class="hljs-built_in">get</span>(<span class="hljs-string">&apos;id&apos;</span>)
+            <span class="hljs-keyword">cd</span> = models.<span class="hljs-keyword">cd</span>.objects.<span class="hljs-built_in">get</span>(id = id_)
+            <span class="hljs-keyword">if</span> edit_form.is_valid():
+                barcode = edit_form.cleaned_data[<span class="hljs-string">&apos;barcode&apos;</span>]
+                ...
+                <span class="hljs-keyword">if</span> edit_form.cleaned_data[<span class="hljs-string">&apos;artist&apos;</span>]:
+                    artist = edit_form.cleaned_data[<span class="hljs-string">&apos;artist&apos;</span>]
+                <span class="hljs-keyword">else</span>:
+                    artist = None
+                ...
+                <span class="hljs-keyword">if</span> barcode != <span class="hljs-keyword">cd</span>.barcode:
+                    check = models.<span class="hljs-keyword">cd</span>.objects.<span class="hljs-built_in">filter</span>(barcode=barcode, produce_area=produce_area, cost=cost)   #&#x68C0;&#x67E5;unique&#x9650;&#x5236;
+                    <span class="hljs-keyword">if</span> check:
+                        message = <span class="hljs-string">&quot;&#x5531;&#x7247;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x8BF7;&#x91CD;&#x65B0;&#x586B;&#x5199;&#x6761;&#x5F62;&#x7801;&#xFF01;&quot;</span>
+                        <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;editcd.html&apos;</span>, locals())
+                    models.<span class="hljs-keyword">cd</span>.objects.<span class="hljs-built_in">filter</span>(id=id_).<span class="hljs-keyword">update</span>(barcode=barcode)
+                <span class="hljs-keyword">if</span> name != <span class="hljs-keyword">cd</span>.name:
+                    models.<span class="hljs-keyword">cd</span>.objects.<span class="hljs-built_in">filter</span>(id=id_).<span class="hljs-keyword">update</span>(name=name)
+                ...
+                message = <span class="hljs-string">&quot;&#x5DF2;&#x6210;&#x529F;&#x4FEE;&#x6539;&#x5531;&#x7247;&#x4FE1;&#x606F;&quot;</span>
+                <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;/detailcd&apos;</span>)  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x5531;&#x7247;&#x8BE6;&#x7EC6;&#x9875;&#x9762;
+            message = <span class="hljs-string">&quot;&#x8BF7;&#x68C0;&#x67E5;&#x586B;&#x5199;&#x7684;&#x5185;&#x5BB9;&#xFF01;&quot;</span>
+            <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&quot;editcd.html&quot;</span>, {<span class="hljs-string">&apos;cd&apos;</span>:<span class="hljs-keyword">cd</span>})  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x5531;&#x7247;&#x7F16;&#x8F91;&#x9875;&#x9762;
+      <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;/&apos;</span>)</code></pre>
+<ul>
+<li><p>&#x8FDB;&#x8D27;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x53EA;&#x6709;&#x5E97;&#x957F;&#x80FD;&#x4F7F;&#x7528;&#x6B64;&#x529F;&#x80FD;&#xFF0C;&#x8FDB;&#x8D27;&#x6210;&#x529F;&#x540E;&#x8DF3;&#x8F6C;&#x81F3;&#x8FDB;&#x8D27;&#x8BA2;&#x5355;&#x9875;&#x9762;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E8%BF%9B%E8%B4%A71.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x8FDB;&#x8D27;&#x6570;&#x91CF;&#x8BBE;&#x4E3A;0&#xFF0C;&#x62A5;&#x9519;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E8%BF%9B%E8%B4%A72.png" alt>  <br>
+&#x8F93;&#x5165;&#x5408;&#x9002;&#x7684;&#x8FDB;&#x8D27;&#x6570;&#x91CF;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E8%BF%9B%E8%B4%A73.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;preordercd.html preordercd()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   def preordercd(request):
+      <span class="hljs-keyword">if</span> request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;is_admin&apos;</span>):   #&#x5E97;&#x957F;&#x624D;&#x80FD;&#x4F7F;&#x7528;
+         <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;GET&quot;</span>:   
+            request.session[<span class="hljs-string">&apos;id&apos;</span>] = request.GET.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;id&apos;</span>)
+            cd = models.cd.objects.<span class="hljs-builtin-name">get</span>(id = request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;id&apos;</span>))
+            preform = PreorderForm()
+            return render(request, <span class="hljs-string">&quot;preordercd.html&quot;</span>, locals())
+         <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+            preform = PreorderForm(request.POST)
+            id_ = request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;id&apos;</span>)
+            cd = models.cd.objects.<span class="hljs-builtin-name">get</span>(id = id_)
+            <span class="hljs-keyword">if</span> preform.is_valid():
+                amount = preform.cleaned_data[<span class="hljs-string">&apos;amount&apos;</span>]
+                <span class="hljs-keyword">if</span> amount&lt;=0:
+                    message = <span class="hljs-string">&quot;&#x8FDB;&#x8D27;&#x6570;&#x91CF;&#x5FC5;&#x987B;&#x5927;&#x4E8E;0&#xFF01;&quot;</span>
+                    return render(request, <span class="hljs-string">&quot;preordercd.html&quot;</span>, locals())  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x5531;&#x7247;&#x8FDB;&#x8D27;&#x9875;&#x9762;
+                model.orderlist.objects.create(<span class="hljs-attribute">status</span>=<span class="hljs-string">&quot;&#x672A;&#x4ED8;&#x6B3E;&quot;</span>, <span class="hljs-attribute">mark</span>=<span class="hljs-literal">True</span>, <span class="hljs-attribute">cd</span>=<span class="hljs-literal">True</span>, <span class="hljs-attribute">amount</span>=amount, <span class="hljs-attribute">tar</span>=id_, <span class="hljs-attribute">cost</span>=cd.cost, <span class="hljs-attribute">name</span>=cd.name, <span class="hljs-attribute">produce_area</span>=cd.produce_area)     #&#x521B;&#x5EFA;&#x8FDB;&#x8D27;&#x8BA2;&#x5355;
+                return redirect(<span class="hljs-string">&apos;/orderlist&apos;</span>)  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x8BA2;&#x5355;&#x5217;&#x8868;
+            message = <span class="hljs-string">&quot;&#x8BF7;&#x68C0;&#x67E5;&#x586B;&#x5199;&#x7684;&#x5185;&#x5BB9;&#xFF01;&quot;</span>
+            return render(request, <span class="hljs-string">&quot;preordercd.html&quot;</span>, {<span class="hljs-string">&apos;cd&apos;</span>:cd})  # &#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x5531;&#x7247;&#x8FDB;&#x8D27;&#x9875;&#x9762;
+      return redirect(<span class="hljs-string">&apos;/&apos;</span>)</code></pre>
+<ul>
+<li><p>&#x8FDB;&#x8D27;&#x8BA2;&#x5355;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x53EF;&#x67E5;&#x8BE2;&#x5E97;&#x957F;&#x6240;&#x6709;&#x7684;&#x8FDB;&#x8D27;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x672A;&#x4ED8;&#x6B3E;&#x3001;&#x5DF2;&#x53D6;&#x6D88;&#x3001;&#x5DF2;&#x652F;&#x4ED8;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#x7684;&#x8BA2;&#x5355;&#xFF0C;&#x6309;&#x7167;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&#x9006;&#x5E8F;&#x6392;&#x5217;&#xFF0C;&#x9876;&#x90E8;&#x53EF;&#x770B;&#x5230;&#x603B;&#x652F;&#x51FA;&#x60C5;&#x51B5;&#xFF0C;&#x53EA;&#x5141;&#x8BB8;&#x5E97;&#x957F;&#x4F7F;&#x7528;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E8%BF%9B%E8%B4%A7%E8%AE%A2%E5%8D%95%E9%A1%B5%E9%9D%A2.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x53D6;&#x6D88;&#x8FDB;&#x8D27;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%8F%96%E6%B6%88%E8%BF%9B%E8%B4%A7%E8%AE%A2%E5%8D%95.png" alt>  <br>
+&#x53D6;&#x6D88;&#x540E;&#x5BF9;&#x5E94;&#x7684;&#x5531;&#x7247;&#x5E93;&#x5B58;&#x4E0D;&#x589E;&#x52A0;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%8F%96%E6%B6%88%E8%BF%9B%E8%B4%A7%E5%BA%93%E5%AD%98%E4%B8%8D%E5%8F%98.png" alt>  <br>
+&#x518D;&#x6B21;&#x8FDB;&#x8D27;&#x540C;&#x4E00;&#x5F20;&#x5531;&#x7247;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%86%8D%E6%AC%A1%E8%BF%9B%E8%B4%A7.png" alt>  <br>
+&#x4ED8;&#x6B3E;&#x6210;&#x529F;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E4%BB%98%E6%AC%BE.png" alt>  <br>
+&#x5531;&#x7247;&#x5E93;&#x5B58;&#x81EA;&#x52A8;&#x589E;&#x52A0;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E8%BF%9B%E8%B4%A7%E6%88%90%E5%8A%9F%E6%95%B0%E9%87%8F%E5%8F%98%E5%8C%96.png" alt>  <br>
+&#x67E5;&#x8BE2;&#x5DF2;&#x4ED8;&#x6B3E;&#x7684;&#x8FDB;&#x8D27;&#x4FE1;&#x606F;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E8%BF%9B%E8%B4%A7%E8%AE%A2%E5%8D%95%E7%AD%9B%E9%80%89.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;orderlist.html orderlist()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   def <span class="hljs-keyword">orderlist(request):
+</span>      if request.session.get(<span class="hljs-string">&apos;is_admin&apos;</span>)==False: <span class="hljs-comment"># &#x5E97;&#x957F;&#x624D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x6B64;&#x529F;&#x80FD;</span>
+         return redirect(<span class="hljs-string">&quot;/&quot;</span>)
+      form = <span class="hljs-keyword">OrderForm()
+</span>      <span class="hljs-keyword">orderlist </span>= model.<span class="hljs-keyword">orderlist.objects.all()
+</span>      <span class="hljs-keyword">orderlist </span>= reversed(<span class="hljs-keyword">orderlist)
+</span>      <span class="hljs-comment">#&#x8BA1;&#x7B97;&#x603B;&#x652F;&#x51FA;</span>
+      ol = model.<span class="hljs-keyword">orderlist.objects.filter(status=&apos;&#x5DF2;&#x4ED8;&#x6B3E;&apos;)
+</span>      money = <span class="hljs-number">0</span>.<span class="hljs-number">0</span>
+      for o in ol:
+         money = money + o.cost * o.amount
+      if request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+         form = <span class="hljs-keyword">OrderForm(request.POST)
+</span>         <span class="hljs-keyword">orderlist </span>= model.<span class="hljs-keyword">orderlist.objects.all()
+</span>         if form.is_valid():  <span class="hljs-comment"># &#x83B7;&#x53D6;&#x6570;&#x636E;</span>
+            if form.cleaned_data[<span class="hljs-string">&apos;status&apos;</span>]:
+                <span class="hljs-keyword">orderlist </span>= <span class="hljs-keyword">orderlist.filter(status=form.cleaned_data[&apos;status&apos;])
+</span>            ...
+            <span class="hljs-keyword">orderlist </span>= <span class="hljs-keyword">orderlist.filter(cd=form.cleaned_data[&apos;cd&apos;])
+</span>            <span class="hljs-comment">#&#x8BA1;&#x7B97;&#x603B;&#x652F;&#x51FA;</span>
+            ...
+      return render(request, <span class="hljs-string">&quot;orderlist.html&quot;</span>, locals())</code></pre>
+<ul>
+<li><p>&#x5BA2;&#x6237;&#x8BA2;&#x5355;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x67E5;&#x8BE2;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x7528;&#x6237;&#x7684;&#x8BA2;&#x5355;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x7D22;&#x5F15;&#x5230;&#x4E13;&#x8F91;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x548C;&#x7528;&#x6237;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x8FD8;&#x53EF;&#x6839;&#x636E;&#x65F6;&#x95F4;&#x7B5B;&#x9009;&#x8BA2;&#x5355;&#xFF0C;&#x53EA;&#x5141;&#x8BB8;&#x5E97;&#x957F;&#x4F7F;&#x7528;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%AE%A2%E6%88%B7%E8%AE%A2%E5%8D%95%E9%A1%B5%E9%9D%A2.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;  <br>
+&#x7B5B;&#x9009;&#x51FA;2021-06-11&#x5F53;&#x5929;&#x7684;&#x8BA2;&#x5355;&#x60C5;&#x51B5;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%AE%A2%E6%88%B7%E8%AE%A2%E5%8D%95%E7%AD%9B%E9%80%89.png" alt>  <br>
+&#x70B9;&#x51FB;&#x201C;&#x67E5;&#x770B;&#x4E13;&#x8F91;&#x4FE1;&#x606F;&#x201D;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/cd%E8%B4%AD%E4%B9%B0%E6%88%90%E5%8A%9F%E5%90%8E%E7%9A%84%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF%E7%95%8C%E9%9D%A2.png" alt>  <br>
+&#x70B9;&#x51FB;&#x201C;&#x67E5;&#x770B;&#x7528;&#x6237;&#x201D;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%AE%A2%E6%88%B7%E4%B8%BB%E9%A1%B5.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;userorder.html userorder() detailuser.html detailuser()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   *userorder&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x5728;&#x4E4B;&#x524D;&#x5DF2;&#x5206;&#x6790;&#x8FC7;&#xFF0C;&#x4E0D;&#x518D;&#x5206;&#x6790;*
+   def detailuser(request):
+      <span class="hljs-keyword">if</span> request.session.<span class="hljs-builtin-name">get</span>(<span class="hljs-string">&apos;is_admin&apos;</span>):   #&#x5E97;&#x4E3B;&#x624D;&#x80FD;&#x7528;
+       <span class="hljs-built_in"> user </span>= models.User.objects.<span class="hljs-builtin-name">get</span>(<span class="hljs-attribute">username</span>=request.GET.get(&apos;username&apos;))
+        return render(request, <span class="hljs-string">&quot;detailuser.html&quot;</span>, locals())
+      return redirect(<span class="hljs-string">&apos;/&apos;</span>)</code></pre>
+<ul>
+<li><p>&#x5BA2;&#x6237;&#x8D44;&#x6599;&#x67E5;&#x8BE2;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x5728;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x7528;&#x6237;&#x7684;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;&#xFF0C;&#x53EA;&#x5141;&#x8BB8;&#x5E97;&#x957F;&#x4F7F;&#x7528;&#xFF0C;&#x8FD8;&#x63D0;&#x4F9B;&#x7B5B;&#x9009;&#x529F;&#x80FD;</p></li>
+<li><p>&#x754C;&#x9762;&#xFF1A;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%AE%A2%E6%88%B7%E8%B5%84%E6%96%99%E6%9F%A5%E8%AF%A2%E9%A1%B5%E9%9D%A2.png" alt></p></li>
+<li><p>&#x6D4B;&#x8BD5;&#xFF1A;&#x67E5;&#x8BE2;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#x4E3A;18692206916&#x7684;&#x7528;&#x6237;  <br>
+<img src="file:///C:/Users/dell/Desktop/pj/%E6%96%87%E6%A1%A3/pic/%E5%AE%A2%E6%88%B7%E8%B5%84%E6%96%99%E6%9F%A5%E8%AF%A2%E6%89%8B%E6%9C%BA.png" alt></p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;queryuser.html queryuser()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">queryuser</span><span class="hljs-params">(request)</span>:</span>
+      <span class="hljs-keyword">if</span> request.session.get(<span class="hljs-string">&apos;is_admin&apos;</span>)==<span class="hljs-literal">False</span>: <span class="hljs-comment"># &#x7528;&#x6237;&#x4E0D;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x6B64;&#x529F;&#x80FD;</span>
+         <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&quot;/&quot;</span>)
+      query_form = QueryuserForm(locals())
+      user_list = models.User.objects.all()
+      <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+         query_form = QueryuserForm(request.POST)
+         <span class="hljs-keyword">if</span> query_form.is_valid():  <span class="hljs-comment"># &#x83B7;&#x53D6;&#x6570;&#x636E;</span>
+            <span class="hljs-keyword">if</span> query_form.cleaned_data[<span class="hljs-string">&apos;username&apos;</span>]:
+                user_list = user_list.filter(username=query_form.cleaned_data[<span class="hljs-string">&apos;username&apos;</span>])
+            ...
+      <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;queryuser.html&apos;</span>, locals())</code></pre>
+<ul>
+<li><p>&#x9000;&#x51FA;&#x8D26;&#x6237;</p>
+<ul>
+<li><p>&#x8BF4;&#x660E;&#xFF1A;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x9000;&#x51FA;&#x540E;&#x81EA;&#x52A8;&#x8DF3;&#x8F6C;&#x5230;&#x4E3B;&#x9875;&#xFF0C;&#x754C;&#x9762;&#x4E0E;&#x672A;&#x767B;&#x5F55;&#x65F6;&#x4E00;&#x6A21;&#x4E00;&#x6837;</p></li>
+<li><p>&#x6E90;&#x7801;&#x5206;&#x6790;&#xFF1A;logout()</p></li></ul></li>
+</ul>
+<pre><code class="hljs">   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">logout</span><span class="hljs-params">(request)</span>:</span>
+      <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> request.session.get(<span class="hljs-string">&apos;is_login&apos;</span>, <span class="hljs-literal">None</span>): <span class="hljs-comment"># &#x672C;&#x6765;&#x5C31;&#x672A;&#x767B;&#x5F55;</span>
+         <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&quot;/&quot;</span>)
+      request.session.flush() <span class="hljs-comment">#&#x6E05;&#x9664;&#x767B;&#x5165;&#x7684;&#x6570;&#x636E;</span>
+      <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&quot;/&quot;</span>)</code></pre>
+<h3 id="&#x7279;&#x8272;&#x548C;&#x521B;&#x65B0;&#x70B9;">&#x7279;&#x8272;&#x548C;&#x521B;&#x65B0;&#x70B9;</h3>
+<ul>
+<li>&#x52A0;&#x5165;&#x4E86;&#x9A8C;&#x8BC1;&#x7801;&#x673A;&#x5236;&#xFF0C;&#x9632;&#x6B62;&#x4E86;&#x673A;&#x5668;&#x4EBA;&#x6076;&#x610F;&#x5927;&#x91CF;&#x6CE8;&#x518C;</li>
+<li>&#x524D;&#x7AEF;&#x5747;&#x4E3A;&#x81EA;&#x5DF1;&#x6240;&#x5199;&#xFF0C;&#x672A;&#x7528;&#x73B0;&#x6210;&#x6846;&#x67B6;&#x548C;&#x4EE3;&#x7801;</li>
+<li>&#x6709;&#x5F88;&#x591A;&#x5B89;&#x5168;&#x6027;&#x5224;&#x5B9A;</li>
+</ul>
+<h3 id="&#x63D0;&#x4EA4;&#x6587;&#x4EF6;&#x8BF4;&#x660E;">&#x63D0;&#x4EA4;&#x6587;&#x4EF6;&#x8BF4;&#x660E;</h3>
+<ul>
+<li><p>record&#x6587;&#x4EF6;&#x5939;&#xFF1A;  <br>
+cd&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x5305;&#x542B;&#x4E86;&#x6709;&#x5173;&#x5531;&#x7247;&#x7684;&#x6240;&#x6709;&#x5904;&#x7406;&#x51FD;&#x6570;&#x3001;&#x8868;&#x5355;&#x3001;&#x6A21;&#x578B;&#x4FE1;&#x606F;  <br>
+list&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x5305;&#x542B;&#x4E86;&#x6709;&#x5173;&#x8BA2;&#x5355;&#x7684;&#x6240;&#x6709;&#x5904;&#x7406;&#x51FD;&#x6570;&#x3001;&#x8868;&#x5355;&#x3001;&#x6A21;&#x578B;&#x4FE1;&#x606F;  <br>
+record&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x9879;&#x76EE;&#x6838;&#x5FC3;&#x533A;&#xFF0C;&#x5305;&#x62EC;&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;&#x3001;url&#x914D;&#x7F6E;&#x3001;&#x6240;&#x6709;html&#x6E90;&#x6587;&#x4EF6;&#x3001;&#x9875;&#x9762;&#x4F7F;&#x7528;&#x7684;&#x56FE;&#x7247;&#x3001;&#x9759;&#x6001;&#x6587;&#x4EF6;&#x5730;&#x5740;&#x914D;&#x7F6E;&#x7B49;  <br>
+user&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x5305;&#x542B;&#x4E86;&#x6709;&#x5173;&#x7528;&#x6237;&#x548C;&#x5E97;&#x957F;&#x7684;&#x6240;&#x6709;&#x5904;&#x7406;&#x51FD;&#x6570;&#x3001;&#x8868;&#x5355;&#x3001;&#x6A21;&#x578B;&#x4FE1;&#x606F;  <br>
+db.sqlite3  <br>
+manage.py  </p></li>
+<li><p>&#x6587;&#x6863;&#xFF1A;  <br>
+pic&#x6587;&#x4EF6;&#x5939;&#xFF1A;&#x672C;&#x6587;&#x6863;&#x6240;&#x9700;&#x8981;&#x7684;&#x56FE;&#x7247;  <br>
+report.md&#xFF1A;&#x672C;&#x6587;&#x6863;&#x7684;md&#x6587;&#x4EF6;  <br>
+report.pdf&#xFF1A;&#x672C;&#x6587;&#x6863;&#x7684;pdf&#x6587;&#x4EF6;  <br>
+report.html&#xFF1A;&#x672C;&#x6587;&#x6863;&#x7684;html&#x6587;&#x4EF6;<br>
+&#x9879;&#x76EE;&#x9700;&#x6C42;&#x62A5;&#x544A;.pdf&#xFF1A;&#x9879;&#x76EE;&#x524D;&#x671F;&#x6240;&#x5199;&#x7684;&#x9700;&#x6C42;&#x62A5;&#x544A;&#xFF0C;&#x5728;&#x5B9E;&#x73B0;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x6709;&#x8C03;&#x6574;</p></li>
+<li><p>ER.eddx&#xFF1A;ER&#x56FE;&#x7684;&#x6E90;&#x6587;&#x4EF6;</p></li>
+<li><p>record_backup&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x6E90;&#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x89E3;&#x538B;</p></li>
+</ul>
+<h3 id="&#x5B9E;&#x9A8C;&#x603B;&#x7ED3;">&#x5B9E;&#x9A8C;&#x603B;&#x7ED3;</h3>
+<ul>
+<li>&#x5B66;&#x4F1A;&#x4E86;Django&#x6846;&#x67B6;&#x7684;&#x57FA;&#x672C;&#x8BED;&#x8A00;&#x4E0E;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</li>
+<li>&#x8FDB;&#x4E00;&#x6B65;&#x52A0;&#x5F3A;&#x4E86;&#x524D;&#x7AEF;&#x7684;&#x8BBE;&#x8BA1;&#x80FD;&#x529B;&#x4EE5;&#x53CA;&#x5BF9;HTML&#x548C;CSS&#x7684;&#x638C;&#x63E1;&#x7A0B;&#x5EA6;</li>
+<li>&#x8FDB;&#x4E00;&#x6B65;&#x52A0;&#x6DF1;&#x4E86;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;&#x7684;&#x8BA4;&#x8BC6;</li>
+<li>&#x5B66;&#x4F1A;&#x4E86;&#x7528;&#x8F6F;&#x4EF6;&#x753B;ER&#x56FE;</li>
+<li>&#x8FDB;&#x4E00;&#x6B65;&#x719F;&#x6089;&#x4E86;Python3&#x7684;&#x8BED;&#x6CD5;</li>
+<li>&#x8FDB;&#x4E00;&#x6B65;&#x719F;&#x6089;&#x4E86;shell&#x547D;&#x4EE4;&#x884C;&#x8BED;&#x6CD5;</li>
+<li>&#x5584;&#x7528;&#x641C;&#x7D22;&#x5F15;&#x64CE;</li>
+<li>&#x4E00;&#x5B9A;&#x8981;&#x5728;&#x5EFA;&#x7ACB;&#x5DE5;&#x7A0B;&#x6587;&#x4EF6;&#x524D;&#x753B;&#x597D;ER&#x56FE;&#xFF0C;&#x8840;&#x7684;&#x6559;&#x8BAD;</li>
+<li>&#x2026;&#x2026;</li>
+</ul>
+    </body>
+</html>
