@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title> {{vinyl.name}} </title>
+        <style>
+            #header {
+                background-color:black;
+                color:white;
+                text-align:center;
+                padding:10px;
+            }
+            #nav {
+                line-height:30px;
+                background-color: #eeeeee;
+                text-align:center;
+                height:470px;
+                width:115px;
+                float:left;
+                padding:5px;	      
+            }
+            #section1 {
+                height:470px;
+                width:630px;
+                float:left;
+                padding:10px;
+                text-align: center;
+            }
+            #section2 {
+                height:470px;
+                width:300px;
+                float:left;
+                padding:10px;
+                text-align: left;
+            }
+            #footer {
+                background-color:black;
+                color:white;
+                clear:both;
+                text-align:center;
+                padding:1px;	 	 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <a href="/"><img src="/static/pic/record.png" align="left" width="126" height="126.5"></a>
+        
+        <div id="header">
+            <H1><font size="10"> {{vinyl.name}}-{{vinyl.artist}} </font></H1>
+        </div>
+
+        <div id="nav">
+            <br>
+            <a href="/querycd">CD查询</a>><br><br>
+            <a href="/queryvinyl">黑胶查询</a>><br><br>
+            <a href="/self">回到个人主页</a>><br><br>
+        </div>
+
+        <form action="/editvinyl/" method="post">{% csrf_token %}
+
+        <div id="section1">
+            <br>
+            <img src="{{vinyl.cover}}" align="center" width="430" height="430">
+            <br>
+        </div>
+
+        <div id="section2">
+            <br>
+                {% if message %}
+                    <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
+                <br><br>
+                <table align="center">
+                    <tr>
+                        <th align="left"> 专辑名： </th>
+                        <td align="center"> {{ edit_form.name}} </td>
+                    </tr>
+                    <tr>
+                        <th align="left"> 艺人： </th>
+                        <td align="center"> {{ edit_form.artist }} </td>
+                    </tr>
+                    <tr>
+                        <th align="left"> 条形码： </th>
+                        <td align="center"> {{ edit_form.barcode }} </td>
+                    </tr>
+                    <tr>
+                        <th align="left"> 曲目数量： </th>
+                        <td align="center"> {{ edit_form.number }} </td>
+                    </tr>
+                    <tr>
+                        <th align="left"> 流派： </th>
+                        <td align="center"> {{ edit_form.genre }} </td>
+                    </tr>
+                    <tr>
+                        <th align="left"> 材质： </th>
+                        <td align="center"> 黑胶 </td>
+                    </tr>
+                    <tr>
+                        <th align="left"> 生产地： </th>
+                        <td align="center"> {{ edit_form.produce_area }} </td>
+                    </tr>
+                    <tr>
+                        <th align="left"> 售价： </th>
+                        <td align="center"> {{ edit_form.price }} </td>
+                    </tr>
+                    <tr>
+                        <th align="left"> 进货价: </th>
+                        <td align="center"> {{ edit_form.cost }} </td>
+                    </tr>
+                    <tr>
+                        <th align="left"> 是否为二手？ </th>
+                        <td align="center"> {{ edit_form.second_hand }} </td>
+                    </tr>
+                    <tr>
+                        <th align="left"> 库存： </th>
+                        <td align="center"> {{ vinyl.remain }} </td>
+                    </tr>
+                </table>
+                <br>
+                <input type="submit" value="提交">
+                <input type="reset" value="重置">
+        </div>
+
+        </form>
+
+        <div id="footer">
+            Copyright @Brayton's Record
+        </div>
+
+    </body>
+
+</html>

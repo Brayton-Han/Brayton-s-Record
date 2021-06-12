@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Brayton's Record</title>
+        <style>
+            #header {
+                background-color:black;
+                color:white;
+                text-align:center;
+                padding:10px;
+            }
+            #nav {
+                line-height:30px;
+                background-color: #eeeeee;
+                text-align:center;
+                height:470px;
+                width:115px;
+                float:left;
+                padding:5px;	      
+            }
+            #section {
+                height:470px;
+                width:1188px;
+                float:left;
+                padding:10px;	 	 
+            }
+            #footer {
+                background-color:black;
+                color:white;
+                clear:both;
+                text-align:center;
+                padding:1px;	 	 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <a href="/"><img src="/static/pic/record.png" align="left" width="126" height="126.5" ></a>
+        <div id="header">
+            <H1><font size="10"> Brayton's Record </font></H1>
+        </div>
+
+        <div id="nav">
+            <br>
+            {% if request.session.is_login %}
+                <a>当前在线：</a><br>
+                <a> {{ user.name }} </a><br><br>
+                <a href="/self/">个人主页</a>><br><br>
+                <a href="/querycd">唱片查询</a>><br><br>
+                <a href="/top10">热销榜top10</a>><br><br>
+                <a href="/logout/">退出账号</a>><br><br>
+            {% else %}
+                <a href='/login'>登录</a>><br><br>
+                <a href="/register">注册</a>><br><br>
+            {% endif %}
+            <a href="">了解我们</a>><br>
+        </div>
+
+        <div id="section">
+            <MARQUEE onmouseover=stop() onmouseout=start() direction="left"
+            scrollAmount="15" loop=infinite deplay="5">
+                <img src="/static/pic/NFR.jpg" width="470" height="470">
+                <img src="/static/pic/Melodrama.jpg" width="470" height="470">
+                <img src="/static/pic/Blue Weekend.jpg" width="470" height="470">
+                <img src="/static/pic/Folklore.jpg" width="470" height="470">
+                <img src="/static/pic/1989.jpg" width="470" height="470">
+                <img src="/static/pic/Golden Hour.jpg" width="470" height="470">
+                <img src="/static/pic/Blonde.jpg" width="470" height="470">
+                <img src="/static/pic/Lush.jpg" width="470" height="470">
+                <img src="/static/pic/Carrie&Lowell.jpg" width="470" height="470">
+                <img src="/static/pic/藏着并不等于遗忘.jpg" width="470" height="470">
+                <img src="/static/pic/垂直活着，水平留恋着.jpg" width="470" height="470">
+                <img src="/static/pic/Una mattina.jpg" width="470" height="470">
+                <img src="/static/pic/thank u, next.jpg" width="470" height="470">
+                <img src="/static/pic/25.jpg" width="470" height="470">
+                <img src="/static/pic/WWAFA, WDWG.jpg" width="470" height="470">
+                <img src="/static/pic/克卜勒.jpg" width="470" height="470">
+                <img src="/static/pic/神的游戏.jpg" width="470" height="470">
+                <img src="/static/pic/寓言.jpg" width="470" height="470">
+                <img src="/static/pic/Anti.jpg" width="470" height="470">
+                <img src="/static/pic/Art Angels.jpg" width="470" height="470">
+                <img src="/static/pic/Fetch The Bolt Cutters.jpg" width="470" height="470">
+                <img src="/static/pic/Father of the Bride.jpg" width="470" height="470">
+                <img src="/static/pic/Future Nostalgia.jpg" width="470" height="470">
+                <img src="/static/pic/In A Dream.jpg" width="470" height="470">
+                <img src="/static/pic/Instrumentals.jpg" width="470" height="470">
+                <img src="/static/pic/MAGDALENE.jpg" width="470" height="470">
+                <img src="/static/pic/Sing To Me Instead.jpg" width="470" height="470">
+                <img src="/static/pic/Some Nights.jpg" width="470" height="470">
+                <img src="/static/pic/Ugly Beauty.jpg" width="470" height="470">
+            </MARQUEE>
+        </div>
+
+        <div id="footer">
+            Copyright @Brayton's Record
+        </div>
+
+    </body>
+
+</html>

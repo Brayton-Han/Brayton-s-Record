@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>注册</title>
+        <style>
+            #header {
+                background-color:black;
+                color:white;
+                text-align:center;
+                padding:10px;
+            }
+            #nav {
+                line-height:30px;
+                background-color: #eeeeee;
+                text-align:center;
+                height:470px;
+                width:115px;
+                float:left;
+                padding:5px;	      
+            }
+            #section {
+                height:470px;
+                width:1188px;
+                float:left;
+                padding:10px;
+                text-align: center;
+            }
+            #footer {
+                background-color:black;
+                color:white;
+                clear:both;
+                text-align:center;
+                padding:1px;	 	 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <a href="/"><img src="/static/pic/record.png" align="left" width="126" height="126.5"></a>
+        <div id="header">
+            <H1><font size="10"> 欢迎注册！ </font></H1>
+        </div>
+
+        <div id="nav">
+            
+        </div>
+
+        <div id="section">
+            <form action="/register/" method="post">
+                {% if message %}
+                    <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
+                {% csrf_token %}
+                <table align="center">
+                    <tr>
+                        <th align="left"> {{ register_form.username.label_tag }} </th>
+                        <th align="center"> {{ register_form.username}} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ register_form.password1.label_tag }} </th>
+                        <th align="center"> {{ register_form.password1 }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ register_form.password2.label_tag }} </th>
+                        <th align="center"> {{ register_form.password2 }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ register_form.name.label_tag }} </th>
+                        <th align="center"> {{ register_form.name }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ register_form.sex.label_tag }} </th>
+                        <th align="center"> {{ register_form.sex }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ register_form.birthday.label_tag }} </th>
+                        <th align="center"> {{ register_form.birthday }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"></th>
+                        <td align="center"> {{ register_form.birthday.help_text }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ register_form.email.label_tag }} </th>
+                        <th align="center"> {{ register_form.email }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ register_form.tel.label_tag }} </th>
+                        <th align="center"> {{ register_form.tel }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ register_form.captcha.label_tag }} </th>
+                        <th align="center"> {{ register_form.captcha }} </th>
+                    </tr>
+                    <tr>
+                        <th>  </th>
+                        <th align="center"> {{ register_form.captcha.errors }} </th>
+                    </tr>
+                </table>
+                <input type="submit" value="提交">
+                <input type="reset" value="重置">    
+                <p>注：带*的为必填项</p>
+                <p>已有账号？点击<a href="/login">这里</a>登录</p>
+            </form>
+        </div>
+
+        <div id="footer">
+            Copyright @Brayton's Record
+        </div>
+
+    </body>
+
+</html>

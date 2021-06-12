@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>修改个人信息</title>
+        <style>
+            #header {
+                background-color:black;
+                color:white;
+                text-align:center;
+                padding:10px;
+            }
+            #nav {
+                line-height:30px;
+                background-color: #eeeeee;
+                text-align:center;
+                height:470px;
+                width:115px;
+                float:left;
+                padding:5px;	      
+            }
+            #section {
+                height:470px;
+                width:1188px;
+                float:left;
+                padding:10px;
+                text-align: center;
+            }
+            #footer {
+                background-color:black;
+                color:white;
+                clear:both;
+                text-align:center;
+                padding:1px;	 	 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <a href="/"><img src="/static/pic/record.png" align="left" width="126" height="126.5"></a>
+        
+        <div id="header">
+            <H1><font size="10"> 修改个人信息 </font></H1>
+        </div>
+
+        <div id="nav">
+            <br>
+            <a href="/editself">修改个人信息</a>><br><br>
+            <a href="/editpassword">修改密码</a>><br><br>
+            <a href="/querycd">唱片查询</a>><br><br>
+            {% if request.session.is_admin %}
+                <a href="/orderlist">我的订单</a>><br><br>
+                <a href="/userorder">客户订单</a>><br><br>
+                <a href="/queryuser">查看客户资料</a>><br><br>
+            {% else %}
+                <a href="/userorder">订单查询</a>><br>
+            {% endif %}
+        </div>
+
+        <div id="section">
+            <form action="/editself/" method="post">{% csrf_token %}
+                <br><br>
+                {% if message %}
+                    <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
+                <br>
+                <table align="center">
+                    <tr>
+                        <th align="left"> {{ edit_form.username.label_tag }} </th>
+                        <th align="center"> {{ edit_form.username}} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ edit_form.name.label_tag }} </th>
+                        <th align="center"> {{ edit_form.name }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ edit_form.sex.label_tag }} </th>
+                        <th align="center"> {{ edit_form.sex }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ edit_form.birthday.label_tag }} </th>
+                        <th align="center"> {{ edit_form.birthday }} </th>
+                    </tr>
+                    <tr>
+                        <th align="center">  </th>
+                        <td align="center"> {{ edit_form.birthday.help_text }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ edit_form.email.label_tag }} </th>
+                        <th align="center"> {{ edit_form.email }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ edit_form.tel.label_tag }} </th>
+                        <th align="center"> {{ edit_form.tel }} </th>
+                    </tr>
+                </table>
+                <br>
+                 <input type="submit" value="提交">
+                 <p> 注：带*的为必填项 </p>
+            </form>
+        </div>
+
+        <div id="footer">
+            Copyright @Brayton's Record
+        </div>
+
+    </body>
+
+</html>

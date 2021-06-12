@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>唱片查询</title>
+        <style>
+            #header {
+                background-color:black;
+                color:white;
+                text-align:center;
+                padding:10px;
+            }
+            #nav {
+                line-height:30px;
+                background-color: #eeeeee;
+                text-align:center;
+                height:480px;
+                width:115px;
+                float:left;
+                padding:5px;	      
+            }
+            #section {
+                height:450px;
+                width:1188px;
+                float:left;
+                padding:10px;
+                text-align: center;
+                overflow:auto
+            }
+            #footer {
+                background-color:black;
+                color:white;
+                clear:both;
+                text-align:center;
+                padding:1px;	 	 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <a href="/"><img src="/static/pic/record.png" align="left" width="126" height="126.5"></a>
+        
+        <div id="header">
+            <H1><font size="10"> 黑胶查询 </font></H1>
+        </div>
+
+        <div id="nav">
+            <br>
+            <a href="/querycd">CD查询</a>><br><br>
+            <a href="/queryvinyl">黑胶查询</a>><br><br>
+            <a href="/self">回到个人主页</a>><br><br>
+        </div>
+
+        <div id="section">
+            <br>
+            <form action="/queryvinyl/" method="post">
+                {% if message %}
+                    <div class="alert alert-warning">{{ message }}</div>
+                {% endif %}
+                {% csrf_token %}
+                <table align="center" border="1">
+                    <tr>
+                        <th align="center"> {{ query_form.name }} </th>
+                        <th align="center"> {{ query_form.artist }} </th>
+                        <th align="center">  </th>
+                        {% if request.session.is_admin %}
+                            <th align="left">  </th>
+                        {% endif %}
+                        <th align="center">  </th>
+                        <th align="center"> {{ query_form.second_hand }} </th>
+                        <th align="center">  </th>
+                        <th> <input type="submit" value="查询"> </th>
+                    </tr>
+                    <tr>
+                        <th align="center"> 专辑名 </th>
+                        <th align="center"> 艺人 </th>
+                        <th align="center"> 售价 </th>
+                        {% if request.session.is_admin %}
+                            <th align="center"> 进货价 </th>
+                        {% endif %}
+                        <th align="center"> 生产地 </th>
+                        <th align="center"> 二手？ </th>
+                        <th align="center"> 库存 </th>
+                        <th align="center"> 详细信息 </th>
+                    </tr>
+                    {% for vinyl in vinyl_list %}
+                        <tr>
+                            <td align="center"> {{ vinyl.name }} </th>
+                            <td align="center"> {{ vinyl.artist }} </th>
+                            <td align="center"> {{ vinyl.price }} </th>
+                            {% if request.session.is_admin %}
+                                <td align="center"> {{ vinyl.cost }} </th>
+                            {% endif %}
+                            <td align="center"> {{ vinyl.produce_area }} </th>
+                            <td align="center"> {{ vinyl.second_hand }} </th>
+                            <td align="center"> {{ vinyl.remain }} </th>
+                            <td align="center"> <a href="/detailvinyl/?id={{vinyl.id}}"><button type="button">查看</button></a> </th>
+                        </tr>
+                    {% endfor %}
+                </table>
+                <br>
+            </form>
+        </div>
+
+        <div id="footer">
+            Copyright @Brayton's Record
+        </div>
+
+    </body>
+
+</html>

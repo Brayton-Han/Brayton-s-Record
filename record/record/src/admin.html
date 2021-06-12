@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>登录</title>
+        <style>
+            #header {
+                background-color:black;
+                color:white;
+                text-align:center;
+                padding:10px;
+            }
+            #nav {
+                line-height:30px;
+                background-color: #eeeeee;
+                text-align:center;
+                height:470px;
+                width:115px;
+                float:left;
+                padding:5px;	      
+            }
+            #section {
+                height:470px;
+                width:1188px;
+                float:left;
+                padding:10px;
+                text-align: center;
+            }
+            #footer {
+                background-color:black;
+                color:white;
+                clear:both;
+                text-align:center;
+                padding:1px;	 	 
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <a href="/"><img src="/static/pic/record.png" align="left" width="126" height="126.5"></a>
+        <div id="header">
+            <H1><font size="10"> 欢迎登录！ </font></H1>
+        </div>
+
+        <div id="nav">
+            
+        </div>
+
+        <div id="section">
+        <br>
+            <form action="/login/" method="post"> 
+            {% if message %} 
+                <div class="alert alert-warning">{{ message }}</div> 
+            {% endif %}
+            {% csrf_token %}
+                <br>
+                <table align="center">
+                    <tr>
+                        <th align="left"> {{ login_form.username.label_tag }} </th>
+                        <th align="center"> {{ login_form.username }} </th>
+                    </tr>
+                    <tr>
+                        <th align="left"> {{ login_form.password.label_tag }} </th>
+                        <th align="center"> {{ login_form.password }} </th>
+                    </tr>
+                    <!--
+                    <tr>
+                        <th align="left"> {{ login_form.captcha.label_tag }} </th>
+                        <th align="center"> {{ login_form.captcha }} </th>
+                    </tr>
+                    <tr>
+                        <th> </th>
+                        <th align="center"> {{ login_form.captcha.errors }} </th>
+                    </tr>
+                    -->
+                </table>
+                <br>
+                <input type="submit" value="登录">
+                <input type="reset" value="重置">
+                <p>没有账号？点击<a href="/register">这里</a>注册</p>
+            </form>
+        </div>
+
+        <div id="footer">
+            Copyright @Brayton's Record
+        </div>
+
+    </body>
+
+</html>
